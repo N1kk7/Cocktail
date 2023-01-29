@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Raleway:ital,wght@0,200;0,400;1,200;1,400&family=Tangerine&display=swap');
+
+
+
+.background{
+  background-color: #fff;
+  min-height: 100cqh;
+  width: 100cqw;
+  background-image: linear-gradient(60deg, #fdfedf, #9fd6f8, #e7c1fb);
+  background-size: 600% 600%;
+  animation: bgAnimatedGradient 15s infinite linear;
+}
+/* .background{
+  background-color: #fff;
+  min-height: 100cqh;
+  width: 100cqw;
+  background-image: linear-gradient(60deg, #18021c, #060310, #0e0414);
+  background-size: 600% 600%;
+  animation: bgAnimatedGradient 15s infinite linear;
+} */
+
+
+
+@keyframes bgAnimatedGradient{
+  0%{
+    background-position: 0 85%;
+
+  }
+  50%{
+    background-position: 100% 20%;
+  }
+  100%{
+    background-position: 0 85%;
+  }
+}
+.none{
+  display: none;
 }
