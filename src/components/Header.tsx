@@ -18,10 +18,10 @@ export default function Header() {
 
   return (
     <Router>
-        <div className='background'>
-            <div className="header border-b-2 w-full">
+        <div className='background absolute'>
+            <div className="header border-b-2 w-full fixed">
                 
-                <div className="button-group flex justify-between px-5">
+                <div className="button-group flex justify-between px-5 ">
                 <div className="menuBtn ">
                     <div className="burger relative top-4 cursor-pointer">
                         <img className='w-4cqw border-2 border-black rounded-md p-1' src="/burger.png" alt="" />
