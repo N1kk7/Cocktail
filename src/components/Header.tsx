@@ -10,6 +10,7 @@ import Cocktail from '../pages/Cocktail';
 import Ingredient from '../pages/Ingredient';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
+import Drink from '../pages/Drink';
 
 export default function Header() {
     const [theme, setTheme] = useState(true)
@@ -51,6 +52,7 @@ export default function Header() {
             <Route path="/" element={<Home />}/>
             <Route path="/Cocktail" element={<Cocktail />}/>
             <Route path="/Ingredient" element={<Ingredient />}/>
+            <Route path="/Drink/:id" element={<Drink />}/>
             <Route path="/About" element={<About />}/>
             <Route path="/Contact" element={<Contact />}/>
 

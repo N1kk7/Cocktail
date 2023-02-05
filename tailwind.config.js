@@ -23,6 +23,10 @@ module.exports = {
             '3cqw' : '3cqw',
             '4cqw' : '4cqw',
             '5cqw' : '5cqw',
+            '9cqw' : '9cqw',
+            '10cqw' : '10cqw',
+            '11cqw' : '11cqw',
+            '20cqw' : '20cqw',
             '22cqw' : '22cqw',
             '40cqw' : '40cqw',
             '45cqw' : '45cqw',
@@ -30,12 +34,26 @@ module.exports = {
 
         },
         height:{
-          '35cqh' : '35cqh',
+          '1cqh' : '1cqh',  
+          '2cqh' : '2cqh',
+          '3cqh' : '3cqh',
+          '4cqh' : '4cqh',
+          '5cqh' : '5cqh',
+          '6cqh' : '6cqh',
+          '7cqh' : '7cqh',
+          '8cqh' : '8cqh',
+          '9cqh' : '9cqh',
+          '22cqh' : '22cqh',
+          '40cqh' : '40cqh',
           '45cqh' : '45cqh',
+          '70cqh' : '70cqh',
+          '100cqh' : '100cqh',
+          'webkit' : '-webkit-fill-available',
 
 
         },
         minHeight:{
+            '40cqh' : '40cqh',
             '100cqh' : '100cqh',
         },
         // top:{
@@ -63,6 +81,9 @@ module.exports = {
         fontFamily: {
           'frederica' : 'Frederica the Great, cursive',
           'tangerine' : 'Tangerine',
+        },
+        display: {
+          'd-unset' : 'unset',
         },
 
       },
