@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function Footer() {
+
+
   return (
 
 <div className="footer bg-gray-800 pt-10 sm:mt-10 w-full">
@@ -11,7 +13,6 @@ export default function Footer() {
             <div className="text-xs uppercase text-gray-400 font-medium mb-6">
                 Getting Started
             </div>
-
 
             {/* <a
                 href="#"

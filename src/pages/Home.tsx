@@ -21,6 +21,8 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center mt-32">
 
+<div id="google_translate_element"></div>
+
     <section
         className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
@@ -108,7 +110,7 @@ export default function Home() {
             </div>
         </div>
     </section>
- 
+
       <section
         className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
         style={{backgroundImage: `url(./nightImg/1.jpeg)`}}
