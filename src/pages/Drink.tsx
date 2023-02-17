@@ -11,7 +11,7 @@ export default function Drink() {
     const [infoDe, setInfoDe] = useState('');
     const [infoIt, setInfoIt] = useState('');
     const [ingrImg, setIngrImg] = useState([]);
-    
+    // console.log(ingrImg);
 
     const getDrink = async () => {
         
@@ -23,7 +23,9 @@ export default function Drink() {
             setInfoEng(drink.strInstructions)
             setInfoDe(drink.strInstructionsDE)
             setInfoIt(drink.strInstructionsIT)
-            console.log(drink);
+            // console.log(drink);
+            // console.log(response)
+
             const  ingredient = [
                 drink.strIngredient1,
                 drink.strIngredient2,
@@ -103,8 +105,8 @@ useEffect(() => {
                         </div> */}
                     </div>
                     <div className="ingredientWWrap text-start py-24 px-10">
-                        { ingrImg.map((elem) => <div className='inline-block p-5'><img className='ingredientImg relative z-20  flex ' src={`https://www.thecocktaildb.com/images/ingredients/${elem}-Small.png`} alt=''></img>
-                        <span className='relative block'>{elem}</span>
+                        { ingrImg.map((elem: any) => <div className='card inline-block px-5 py-1 align-top' key={elem}><img className='ingredientImg relative z-20 flex hover:transition hover:duration-500 hover:scale-110' src={`https://www.thecocktaildb.com/images/ingredients/${elem}-Small.png`} alt=''></img>
+                        <span className='relative block text-center max-w-min mx-auto pt-5'>{elem}</span>
                         </div>)}
 
 

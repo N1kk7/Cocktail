@@ -28,8 +28,12 @@ module.exports = {
             '11cqw' : '11cqw',
             '20cqw' : '20cqw',
             '22cqw' : '22cqw',
+            '30cqw' : '30cqw',
             '40cqw' : '40cqw',
             '45cqw' : '45cqw',
+            '47cqw' : '47cqw',
+            '55cqw' : '55cqw',
+            '65cqw' : '65cqw',
             '70cqw' : '70cqw',
 
         },
@@ -43,7 +47,11 @@ module.exports = {
           '7cqh' : '7cqh',
           '8cqh' : '8cqh',
           '9cqh' : '9cqh',
+          '10cqh' : '10cqh',
+          '12cqh' : '12cqh',
+          '15cqh' : '15cqh',
           '22cqh' : '22cqh',
+          '35cqh' : '35cqh',
           '40cqh' : '40cqh',
           '45cqh' : '45cqh',
           '70cqh' : '70cqh',
@@ -53,12 +61,18 @@ module.exports = {
 
         },
         minHeight:{
+            '20cqh' : '20cqh',
+
             '40cqh' : '40cqh',
             '100cqh' : '100cqh',
         },
-        // top:{
-        //   '5cqw' : '5cqw',
-        // },
+        maxHeight:{
+          '10cqh' : '10cqh',
+          '20cqh' : '20cqh',
+      },
+        top:{
+          '7cqw' : '7cqw',
+        },
         boxShadow:{
           'custom-shadow' : '10px 10px 22px rgb(160, 160, 160)' ,
         },
