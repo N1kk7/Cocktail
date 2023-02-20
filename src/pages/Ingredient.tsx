@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import Footer from '../components/FooterBlock';
 
 
 
@@ -17,6 +18,7 @@ export default function Ingredient() {
 
     const response: any = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list')
     setListIngredient(response.data.drinks);
+    // console.log(response.data.drinks)
     
 
 
@@ -24,10 +26,9 @@ export default function Ingredient() {
 
   }
 
-console.log(listIngredient);
 
 
-
+// console.log(listIngredient)
 
 
 
@@ -49,7 +50,7 @@ useEffect(() => {
                     className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                                 {/* <!-- Card Item --> */}
 
-                                {listIngredient.map((item: any) => <div key={item.idDrink} className='rounded-3xl border-2 border-violet-300 shadow-custom-shadow'>
+                                {listIngredient.map((item: any, index) => <div key={index} className='rounded-3xl border-2 border-violet-300 shadow-custom-shadow'>
 
 <div  className="flex justify-between py-6 px-4  w-22cqw h-fit min-h-40cqh flex-col mx-auto ">
             <div className="flex items-center space-x-4 flex-col">
@@ -88,6 +89,7 @@ useEffect(() => {
 
                 </div>
             </section>
+            <Footer/>
         </>
 
 
