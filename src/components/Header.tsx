@@ -8,8 +8,8 @@ import {
 import Home from '../pages/Home';
 import Cocktail from '../pages/Cocktail';
 import Ingredient from '../pages/Ingredient';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
+import Favorite from '../pages/Favorite';
+import Latest from '../pages/Latest';
 import Drink from '../pages/Drink';
 import { useDispatch, useSelector } from 'react-redux';
 // import { dayTheme, nightTheme } from '../redux/reducers';
@@ -37,12 +37,12 @@ export default function Header() {
                                 </div>
                     </div>
                 <div className="menu">
-                <ul className='list-none font-Raleway tracking-widest text-2cqw text-center py-5'>
+                <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5 text-indigo-900'>
                     <li className='inline-block px-5'><Link to={'/'}> Home </Link></li>
                     <li className='inline-block px-5'><Link to={'/Cocktail'}> Cocktail </Link></li>
                     <li className='inline-block px-5'><Link to={'/Ingredient'}> Ingredient </Link></li>
                     <li className='inline-block px-5'><Link to={'/Favorite'}> Favorite </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Latest'}> Latest view </Link></li>
+                    <li className='inline-block px-5'><Link to={'/Latest'}> Latest </Link></li>
                 </ul>
                 </div>
                 <div className="themeBtns">
@@ -67,8 +67,8 @@ export default function Header() {
             <Route path="/Cocktail" element={<Cocktail />}/>
             <Route path="/Ingredient" element={<Ingredient />}/>
             <Route path="/Drink/:id" element={<Drink />}/>
-            <Route path="/About" element={<About />}/>
-            <Route path="/Contact" element={<Contact />}/>
+            <Route path="/Favorite" element={<Favorite />}/>
+            <Route path="/Latest" element={<Latest />}/>
 
             
         </Routes>
@@ -86,12 +86,12 @@ export default function Header() {
                         </div>
                     </div>
                 <div className="menu">
-                <ul className='list-none font-Raleway tracking-widest text-2cqw text-center py-5'>
+                <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5'>
                     <li className='inline-block px-5'><Link to={'/'}> Home </Link></li>
                     <li className='inline-block px-5'><Link to={'/Cocktail'}> Cocktail </Link></li>
                     <li className='inline-block px-5'><Link to={'/Ingredient'}> Ingredient </Link></li>
                     <li className='inline-block px-5'><Link to={'/Favorite'}> Favorite </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Latest'}> Latest view </Link></li>
+                    <li className='inline-block px-5'><Link to={'/Latest'}> Latest </Link></li>
                 </ul>
                 </div>
                 <div className="themeBtns">
@@ -116,8 +116,8 @@ export default function Header() {
             <Route path="/Cocktail" element={<Cocktail />}/>
             <Route path="/Ingredient" element={<Ingredient />}/>
             <Route path="/Drink/:id" element={<Drink />}/>
-            <Route path="/About" element={<About />}/>
-            <Route path="/Contact" element={<Contact />}/>
+            <Route path="/Favorite" element={<Favorite />}/>
+            <Route path="/Latest" element={<Latest />}/>
 
             
         </Routes>

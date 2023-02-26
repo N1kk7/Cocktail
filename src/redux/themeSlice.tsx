@@ -6,9 +6,29 @@ export const themeSlice = createSlice({
         theme : true,
         stateAlc: true,
         stateNoneAlc: true,
-        stateFirstLetter: false
+        stateFirstLetter: false,
+        // stateLikeBtn: false,
+        favoriteDrinks: [],
+        // detailDrink: [],
     },
     reducers: {
+        // getDetailDrink: (state, action) => {
+        //     console.log(action)
+        //     state.detailDrink = [];
+        //     state.detailDrink = state.detailDrink.concat(...action.payload);
+        // },
+
+        
+        likeActive: (state, action) => {
+            state.favoriteDrinks = state.favoriteDrinks.concat(action.payload);
+            // state.stateLikeBtn = true
+        },
+        likeDisable: (state, action) => {
+            console.log(action.payload)
+            state.favoriteDrinks = state.favoriteDrinks.filter((elem: any) => elem.idDrink !== action.payload)
+
+            // state.stateLikeBtn = false
+        },
         btnActive: (state, param) => {
             switch (param.payload) {
                 case "Alco":
@@ -53,23 +73,5 @@ export const themeSlice = createSlice({
 
 })
 
-export const {dayTheme, nightTheme, btnActive, btnDisable} = themeSlice.actions
+export const {dayTheme, nightTheme, btnActive, btnDisable, likeActive, likeDisable} = themeSlice.actions
 export default themeSlice.reducer;
-
-// const initialState = {
-//     theme: true
-// };
-
-// export const themeReducer = (state = initialState, action: any) => {
-//     switch(action.type) {
-//         case '__nightTheme__' : {
-//             return {...state, theme: state.theme = false}
-//         }
-//         case '__dayTheme__' : {
-//             return {...state, theme: state.theme = true}
-//         }
-//         default: {
-//             return state;
-//         }
-//     }
-// }
