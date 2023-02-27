@@ -14,6 +14,8 @@ import FirstsLetter from '../components/FirstsLetter';
 import { IDrinkByLetter } from "../models/firstLetterModel";
 import DrinkByLetter from "../components/DrinkByLetter";
 import Footer from "../components/FooterBlock";
+import Modal from "../components/Modal";
+import { useEffect, useState } from "react";
 
 
 
@@ -27,20 +29,41 @@ export default function Cocktail() {
   const stateNoneAlc = useSelector((state: any) => state.theme.stateNoneAlc);
   const theme = useSelector((state: any) => state.theme.theme);
   const firstLetter = useSelector((state: any) => state.theme.stateFirstLetter);
+  const modal = useSelector((state:any) => state.cocktail.modal);
+  const [style, setStyle] = useState<string>("unset");
+
+
 
   const drinkByLetter = useSelector((state: any) => state.cocktail.drinkByLetter);
   const dispatch = useDispatch<any>();
 // console.log(noneAlc)
 
 
+const checkStyle = () => {
+  if (modal) {
+    setStyle("fixed")
+  } else {
+    setStyle("unset")
+  }
+}
+
+useEffect(() => {
+  checkStyle();
+  
+// // eslint-disable-next-line react-hooks/exhaustive-deps
+});
+
 
   return (
     <>
-        <div className="main mt-40 ">
+        {modal && <Modal key={Date.now()}/>}
+
+        <div className="main mt-40 " style={{position: `${style}` as "unset"}}>
 
 {/* <div style={{backgroundImage: `url("bar.jpeg")`}} className="flex items-center justify-center bg-gradient-to-t h-screen p-6 bg-no-repeat bg-center"> */}
 
           <div className="container w-full my-0 mx-auto">
+
 
             <div className="alcohol flex items-center relative my-8">
               <div className="main-img relative z-10">

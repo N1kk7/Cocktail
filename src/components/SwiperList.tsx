@@ -26,7 +26,7 @@ console.log(theme)
                 <div className="flex items-center space-x-4 flex-col">
                     <img src={cocktails.strDrinkThumb} className='shadow-custom-shadow' alt=""/>
                     <div className="flex flex-col space-y-1">
-                        <span className="font-bold w-max pt-5">{cocktails.strDrink}</span>
+                        <span className="font-bold w-max pt-5 font-frederica">{cocktails.strDrink}</span>
                     </div>
                 </div>
               <img className='absolute bottom-0 left-0 -z-10 h-webkit rounded-3xl opacity-30' src="bg1.png" alt="" />
@@ -52,7 +52,7 @@ console.log(theme)
                 <div className="flex items-center space-x-4 flex-col">
                     <img src={cocktails.strDrinkThumb} className='shadow-custom-shadow' alt=""/>
                     <div className="flex flex-col space-y-1">
-                        <span className="font-bold w-max pt-5">{cocktails.strDrink}</span>
+                        <span className="font-bold w-max pt-5 font-frederica text-bisque">{cocktails.strDrink}</span>
                     </div>
                 </div>
               {/* <img className='absolute bottom-0 left-0 -z-10 h-webkit rounded-3xl opacity-30' src="bg1.png" alt="" /> */}

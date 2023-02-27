@@ -18,7 +18,7 @@ export default function Home() {
   const modal = useSelector((state:any) => state.cocktail.modal);
   const theme = useSelector((state:any) => state.theme.theme);
 
-  const [style, setStyle] = useState<string>("unset")
+  const [style, setStyle] = useState<string>("unset");
 
   SwiperCore.use([Autoplay])
 
@@ -27,11 +27,9 @@ export default function Home() {
       setStyle("fixed")
     } else {
       setStyle("unset")
-
     }
   }
- 
-console.log(theme)
+
 
   useEffect(() => {
     checkStyle();
