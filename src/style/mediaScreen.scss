@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
    .tittleBlock{
     justify-content: space-around;
         .homeTittle{
@@ -15,3 +15,14 @@
     top: 10cqh;
    }
   }
+  @media screen and (max-width: 425px) {
+    .burgerBtn,
+    .themeBtn{
+        width: 14cqw;
+    }
+    .headerDay,
+    .headerNight{
+        height: 90px;
+    }
+
+   }

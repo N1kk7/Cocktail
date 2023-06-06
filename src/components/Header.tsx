@@ -32,7 +32,7 @@ export default function Header() {
                     <div className="menuBtn ">
                         <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4">
                                     <div className="mx-auto max-w-md">
-                                        <img className='w-2cqw border-2 border-white rounded-md' src="burger.png" alt="" />
+                                        <img className='burgerBtn w-2cqw border-2 border-white rounded-md' src="burger.png" alt="" />
                                     </div>
                                 </div>
                     </div>
@@ -49,13 +49,13 @@ export default function Header() {
                     {theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
                         onClick={() => dispatch(nightTheme())}>
                                 <div className="mx-auto max-w-md">
-                                    <img className='w-2cqw border-2 border-white rounded-md' src="moon.png" alt="" />
+                                    <img className='themeBtn w-2cqw border-2 border-white rounded-md' src="moon.png" alt="" />
                                 </div>
                             </div>}
                         {!theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
                         onClick={() => dispatch(dayTheme())}>
                                 <div className="mx-auto max-w-md">
-                                    <img className='w-2cqw border-2 border-white rounded-md' src="sun.png" alt="" />
+                                    <img className='themeBtn w-2cqw border-2 border-white rounded-md' src="sun.png" alt="" />
                                 </div>
                             </div>}
                 </div>
