@@ -115,7 +115,7 @@ export default function Header() {
             <Route path="cocktail/build//" element={<Home />}/>
             <Route path="cocktail/build//Cocktail" element={<Cocktail />}/>
             <Route path="cocktail/build//Ingredient" element={<Ingredient />}/>
-            <Route path="/cocktail/build//Drink/:id" element={<Drink />}/>
+            <Route path="cocktail/build//Drink/:id" element={<Drink />}/>
             <Route path="cocktail/build//Favorite" element={<Favorite />}/>
             <Route path="cocktail/build//Latest" element={<Latest />}/>
 

@@ -43,9 +43,9 @@ export default function Home() {
         {modal && <Modal key={Date.now()}/>}
 
       <section
-          className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md pb-20">
+          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
-          <div className="px-3 w-full lg:w-2/5">
+          <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
                   className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                   <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
@@ -134,7 +134,7 @@ export default function Home() {
           className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
           style={{backgroundImage: `url(./nightImg/1.jpeg)`}}
           >
-          <h1 className="text-white text-5xl font-semibold mt-20 mb-10">
+          <h1 className="parallaxTittle text-white text-5xl font-semibold mt-20 mb-10">
               Here is available more than 700 drinks!
           </h1>
         </section>
@@ -184,9 +184,9 @@ export default function Home() {
         {modal && <Modal key={Date.now()}/>}
 
       <section
-          className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md pb-20">
+          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
-          <div className="px-3 w-full lg:w-2/5">
+          <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
                   className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                   <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-bisque">
@@ -275,7 +275,7 @@ export default function Home() {
           className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
           style={{backgroundImage: `url(./nightImg/1.jpeg)`}}
           >
-          <h1 className="text-bisque bg-customTextBg rounded-xl p-5 text-5xl font-semibold mt-20 mb-10">
+          <h1 className="parallaxTittle text-bisque bg-customTextBg rounded-xl p-5 text-5xl font-semibold mt-20 mb-10">
               Here is available more than 700 drinks!
           </h1>
         </section>

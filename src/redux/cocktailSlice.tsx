@@ -21,7 +21,7 @@ export const fetchDrinkByName: any = createAsyncThunk(
 export const fetchNoneAlc: any = createAsyncThunk(
     'noneAlc/fetchNoneAlc',
      async function() {
-    console.log('fetch')
+    // console.log('fetch')
 
         const response: any = await axios.get<ICocktails>('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic');
         

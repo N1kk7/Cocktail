@@ -86,7 +86,7 @@ const getEnter = (event:any) => {
   return (
 
 
-    <div className="rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit fixed top-28 right-4 z-20">
+    <div className="searchBlock rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit fixed top-28 right-4 z-20">
         <div className="mx-auto max-w-md flex">
 
                 <form 
