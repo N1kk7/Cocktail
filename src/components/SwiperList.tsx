@@ -31,7 +31,7 @@ console.log(theme)
                 </div>
               <img className='absolute bottom-0 left-0 -z-10 h-webkit rounded-3xl opacity-30' src="bg1.png" alt="" />
 
-              <Link to={`/Drink/${cocktails.idDrink}`}>
+              <Link to={`/cocktail/build/Drink/${cocktails.idDrink}`}>
                 <div className="flex flex-col justify-center items-center">
                             <button
                                 className="relative text-center h-4cqh w-11cqw transition-all duration-500
@@ -57,7 +57,7 @@ console.log(theme)
                 </div>
               {/* <img className='absolute bottom-0 left-0 -z-10 h-webkit rounded-3xl opacity-30' src="bg1.png" alt="" /> */}
 
-              <Link to={`/Drink/${cocktails.idDrink}`}>
+              <Link to={`/cocktail/build/Drink/${cocktails.idDrink}`}>
                 <div className="flex flex-col justify-center items-center">
                             <button
                                 className="relative text-center h-4cqh w-11cqw transition-all duration-500

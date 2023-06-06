@@ -215,7 +215,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeActive()); addToCookies(drinkElem)}}
 
-                                ><img src="/heart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src="heart.png" alt="heart"  className='w-3cqw'/></button>
                             </li>}
                             {likeBtn && <li className="space-x-2 text-end">
                                 <button
@@ -226,7 +226,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeDisable()); removeCookies(drinkElem)}}
 
-                                ><img src="/activeHeart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src="activeHeart.png" alt="heart"  className='w-3cqw'/></button>
                             </li>}
                         </ul>
                     </div>
@@ -281,7 +281,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeActive()); addToCookies(drinkElem)}}
 
-                                ><img src="/heart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src="heart.png" alt="heart"  className='w-3cqw'/></button>
                             </li>}
                             {likeBtn && <li className="space-x-2 text-end">
                                 <button
@@ -292,7 +292,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeDisable()); removeCookies(drinkElem)}}
 
-                                ><img src="/activeHeart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src="activeHeart.png" alt="heart"  className='w-3cqw'/></button>
                             </li>}
                         </ul>
                     </div>

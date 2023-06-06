@@ -32,30 +32,30 @@ export default function Header() {
                     <div className="menuBtn ">
                         <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4">
                                     <div className="mx-auto max-w-md">
-                                        <img className='w-2cqw border-2 border-white rounded-md' src="/burger.png" alt="" />
+                                        <img className='w-2cqw border-2 border-white rounded-md' src="burger.png" alt="" />
                                     </div>
                                 </div>
                     </div>
                 <div className="menu">
                 <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5 text-indigo-900'>
-                    <li className='inline-block px-5'><Link to={'/'}> Home </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Cocktail'}> Cocktail </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Ingredient'}> Ingredient </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Favorite'}> Favorite </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Latest'}> Latest </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/'}> Home </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Latest'}> Latest </Link></li>
                 </ul>
                 </div>
                 <div className="themeBtns">
                     {theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
                         onClick={() => dispatch(nightTheme())}>
                                 <div className="mx-auto max-w-md">
-                                    <img className='w-2cqw border-2 border-white rounded-md' src="/moon.png" alt="" />
+                                    <img className='w-2cqw border-2 border-white rounded-md' src="moon.png" alt="" />
                                 </div>
                             </div>}
                         {!theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
                         onClick={() => dispatch(dayTheme())}>
                                 <div className="mx-auto max-w-md">
-                                    <img className='w-2cqw border-2 border-white rounded-md' src="/sun.png" alt="" />
+                                    <img className='w-2cqw border-2 border-white rounded-md' src="sun.png" alt="" />
                                 </div>
                             </div>}
                 </div>
@@ -63,12 +63,12 @@ export default function Header() {
             </div>
             
         <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/Cocktail" element={<Cocktail />}/>
-            <Route path="/Ingredient" element={<Ingredient />}/>
-            <Route path="/Drink/:id" element={<Drink />}/>
-            <Route path="/Favorite" element={<Favorite />}/>
-            <Route path="/Latest" element={<Latest />}/>
+            <Route path="cocktail/build/" element={<Home />}/>
+            <Route path="cocktail/build/Cocktail" element={<Cocktail />}/>
+            <Route path="cocktail/build/Ingredient" element={<Ingredient />}/>
+            <Route path="cocktail/build/Drink/:id" element={<Drink />}/>
+            <Route path="cocktail/build/Favorite" element={<Favorite />}/>
+            <Route path="cocktail/build/Latest" element={<Latest />}/>
 
             
         </Routes>
@@ -81,30 +81,30 @@ export default function Header() {
                     <div className="menuBtn ">
                         <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4">
                             <div className="mx-auto max-w-md">
-                                <img className='w-2cqw border-2 border-white rounded-md' src="/burger.png" alt="" />
+                                <img className='w-2cqw border-2 border-white rounded-md' src="burger.png" alt="" />
                             </div>
                         </div>
                     </div>
                 <div className="menu">
                 <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5'>
-                    <li className='inline-block px-5'><Link to={'/'}> Home </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Cocktail'}> Cocktail </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Ingredient'}> Ingredient </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Favorite'}> Favorite </Link></li>
-                    <li className='inline-block px-5'><Link to={'/Latest'}> Latest </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/'}> Home </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
+                    <li className='inline-block px-5'><Link to={'cocktail/build/Latest'}> Latest </Link></li>
                 </ul>
                 </div>
                 <div className="themeBtns">
                     {theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
                     onClick={() => dispatch(nightTheme())}>
                             <div className="mx-auto max-w-md">
-                                <img className='w-2cqw border-2 border-white rounded-md' src="/moon.png" alt="" />
+                                <img className='w-2cqw border-2 border-white rounded-md' src="moon.png" alt="" />
                             </div>
                         </div>}
                     {!theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
                     onClick={() => dispatch(dayTheme())}>
                             <div className="mx-auto max-w-md">
-                                <img className='w-2cqw border-2 border-white rounded-md' src="/sun.png" alt="" />
+                                <img className='w-2cqw border-2 border-white rounded-md' src="sun.png" alt="" />
                             </div>
                         </div>}
                 </div>
@@ -112,12 +112,12 @@ export default function Header() {
             </div>
             
         <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/Cocktail" element={<Cocktail />}/>
-            <Route path="/Ingredient" element={<Ingredient />}/>
-            <Route path="/Drink/:id" element={<Drink />}/>
-            <Route path="/Favorite" element={<Favorite />}/>
-            <Route path="/Latest" element={<Latest />}/>
+            <Route path="cocktail/build//" element={<Home />}/>
+            <Route path="cocktail/build//Cocktail" element={<Cocktail />}/>
+            <Route path="cocktail/build//Ingredient" element={<Ingredient />}/>
+            <Route path="/cocktail/build//Drink/:id" element={<Drink />}/>
+            <Route path="cocktail/build//Favorite" element={<Favorite />}/>
+            <Route path="cocktail/build//Latest" element={<Latest />}/>
 
             
         </Routes>

@@ -91,14 +91,14 @@ export default function DrinkByLetter({card}: drinkProps) {
                                 setLike(true);
                                 checkFavorite(card);
                             }}
-                            ><img src="/heart.png" alt="heart"  className='w-3cqw'/>
+                            ><img src="heart.png" alt="heart"  className='w-3cqw'/>
                         </button>}
                         {like &&<button
                             onClick={() => {
                                 setLike(false);
                                 removeFavorite(card)
                             }}
-                            ><img src="/activeHeart.png" alt="heart"  className='w-3cqw'/>
+                            ><img src="activeHeart.png" alt="heart"  className='w-3cqw'/>
                         </button>}
                     </div>
                     
@@ -107,7 +107,7 @@ export default function DrinkByLetter({card}: drinkProps) {
                     <h1 className="text-gray-700 font-bold text-xl">$220</h1>
 
 
-                    <Link to={`/Drink/${card.idDrink}`}>
+                    <Link to={`/cocktail/build/Drink/${card.idDrink}`}>
                         <button className="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
                         >
                             View More

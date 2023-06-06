@@ -158,7 +158,7 @@ const getEnter = (event:any) => {
 
 
     //     </div>
-    //     {/* <img src="/forward.png" alt="" className='hidden absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent active:block'/> */}
+    //     {/* <img src="forward.png" alt="" className='hidden absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent active:block'/> */}
 
 
     // </div>
