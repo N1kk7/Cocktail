@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchDrinkByName } from '../redux/cocktailSlice';
 
 export default function FindElem() {
@@ -7,8 +7,9 @@ export default function FindElem() {
 
     // let nameRequest:string = '';
     const [inputValue, setValueInput] = useState('');
+    const [menuClass, setMenuClass] = useState('');
+    const burgerMenuState = useSelector((state:any) => state.theme.burgerMenu)
     const dispatch = useDispatch()
-
 
     // const getEpisodes = (name?:any) => {
         
@@ -17,6 +18,7 @@ export default function FindElem() {
     //       const response: any = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
 
     //       console.log(response)
+          console.log(menuClass);
           
       
     //     }
@@ -27,6 +29,7 @@ export default function FindElem() {
 const getBtn = (event: any) => {
     // console.log(event)
     setValueInput(event.target.value)
+
 
     // event.key === 'Enter' ? console.log('ok') : nameRequest = nameRequest.concat(event.key); 
 //     const value = event.key
@@ -81,7 +84,16 @@ const getEnter = (event:any) => {
         }
 }
 
+// const getMenuClass = () => {
 
+
+// }
+
+useEffect(() => {
+    burgerMenuState ? setMenuClass("searchActive") : setMenuClass('');
+
+    // getMenuClass();
+}, []);
 
   return (
 
@@ -111,13 +123,6 @@ const getEnter = (event:any) => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> 
                 </svg>
                 </form>
-
-
-            
-
-
-            
-
 
         </div>
     </div>

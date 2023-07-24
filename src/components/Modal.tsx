@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { IDrinkByLetter } from '../models/firstLetterModel';
 import { closeModal } from '../redux/cocktailSlice';
 // import { checkHistory } from '../constants/constants';
+import closeBtn from '../img/close.png'
 
 export default function Modal() {
   const stateDrinkName = useSelector((state: any) => state.cocktail.drinkByName);
@@ -36,7 +37,7 @@ export default function Modal() {
                         onClick={() => dispatch(closeModal())}
                         >
                                     <div className="mx-auto max-w-md">
-                                        <img className='w-2cqw border-2 border-white rounded-md' src="/close.png" alt="" />
+                                        <img className='w-2cqw border-2 border-white rounded-md' src={closeBtn} alt="" />
                                     </div>
                                 </div>
                     </div>

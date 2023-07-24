@@ -9,6 +9,7 @@ export const themeSlice = createSlice({
         stateFirstLetter: false,
         // stateLikeBtn: false,
         favoriteDrinks: [],
+        burgerMenu: false,
         // detailDrink: [],
     },
     reducers: {
@@ -67,11 +68,15 @@ export const themeSlice = createSlice({
         },
         nightTheme: (state) => {
             state.theme = false
+        },
+        burgerBtn: (state) => {
+            // console.log('ololo')
+            state.burgerMenu = !state.burgerMenu
         }
 
     }
 
 })
 
-export const {dayTheme, nightTheme, btnActive, btnDisable, likeActive, likeDisable} = themeSlice.actions
+export const {dayTheme, nightTheme, btnActive, btnDisable, likeActive, likeDisable, burgerBtn} = themeSlice.actions
 export default themeSlice.reducer;

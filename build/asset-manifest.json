@@ -1,13 +1,29 @@
 {
   "files": {
-    "main.css": "/cocktail/build/static/css/main.0ff5a529.css",
-    "main.js": "/cocktail/build/static/js/main.f66ee252.js",
-    "index.html": "/cocktail/build/index.html",
-    "main.0ff5a529.css.map": "/cocktail/build/static/css/main.0ff5a529.css.map",
-    "main.f66ee252.js.map": "/cocktail/build/static/js/main.f66ee252.js.map"
+    "main.css": "https://n1kk7.github.io/cocktail/build/static/css/main.b1eac9fc.css",
+    "main.js": "https://n1kk7.github.io/cocktail/build/static/js/main.27e0d896.js",
+    "static/media/bg1.png": "https://n1kk7.github.io/cocktail/build/static/media/bg1.d767ba90fccde550de65.png",
+    "static/media/non-alco.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/non-alco.3a65813455305f756622.jpeg",
+    "static/media/8.png": "https://n1kk7.github.io/cocktail/build/static/media/8.ee9a2c019cd9361b4e8a.png",
+    "static/media/11.png": "https://n1kk7.github.io/cocktail/build/static/media/11.466f58d140106c30e795.png",
+    "static/media/10.png": "https://n1kk7.github.io/cocktail/build/static/media/10.1dc2b369c17eb85e79d1.png",
+    "static/media/2.png": "https://n1kk7.github.io/cocktail/build/static/media/2.444e3db0b0b45ea9d413.png",
+    "static/media/12.png": "https://n1kk7.github.io/cocktail/build/static/media/12.cf05389e567f3fbdcdb2.png",
+    "static/media/3.png": "https://n1kk7.github.io/cocktail/build/static/media/3.927d180574556a711bd9.png",
+    "static/media/1.png": "https://n1kk7.github.io/cocktail/build/static/media/1.c4422bf720311c47316b.png",
+    "static/media/9.png": "https://n1kk7.github.io/cocktail/build/static/media/9.71111c759ad65cf6a35b.png",
+    "static/media/6.png": "https://n1kk7.github.io/cocktail/build/static/media/6.35c6c718027b66c04350.png",
+    "static/media/4.png": "https://n1kk7.github.io/cocktail/build/static/media/4.8f9ade4c25b35564509a.png",
+    "static/media/alcohol.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/alcohol.d3e138038b2d251dc67d.jpeg",
+    "static/media/1.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/1.0476a069169f33774c10.jpeg",
+    "static/media/activeHeart.png": "https://n1kk7.github.io/cocktail/build/static/media/activeHeart.068b4ca28003742a20e5.png",
+    "static/media/heart.png": "https://n1kk7.github.io/cocktail/build/static/media/heart.e73c82c336e44596e754.png",
+    "index.html": "https://n1kk7.github.io/cocktail/build/index.html",
+    "main.b1eac9fc.css.map": "https://n1kk7.github.io/cocktail/build/static/css/main.b1eac9fc.css.map",
+    "main.27e0d896.js.map": "https://n1kk7.github.io/cocktail/build/static/js/main.27e0d896.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff5a529.css",
-    "static/js/main.f66ee252.js"
+    "static/css/main.b1eac9fc.css",
+    "static/js/main.27e0d896.js"
   ]
 }

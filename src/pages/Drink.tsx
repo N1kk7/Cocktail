@@ -6,6 +6,8 @@ import { IDrinkByLetter } from '../models/firstLetterModel';
 import { addHistory } from '../redux/cocktailSlice';
 import {likeActive, likeDisable, } from '../redux/themeSlice';
 // import { useCookies } from 'react-cookie';
+import heart from '../img/heart.png'
+import activeHeart from '../img/activeHeart.png'
 
 export default function Drink() {
     const params = useParams();
@@ -215,7 +217,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeActive()); addToCookies(drinkElem)}}
 
-                                ><img src="heart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src={heart} alt="heart"  className='w-3cqw'/></button>
                             </li>}
                             {likeBtn && <li className="space-x-2 text-end">
                                 <button
@@ -226,7 +228,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeDisable()); removeCookies(drinkElem)}}
 
-                                ><img src="activeHeart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src={activeHeart} alt="heart"  className='w-3cqw'/></button>
                             </li>}
                         </ul>
                     </div>
@@ -281,7 +283,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeActive()); addToCookies(drinkElem)}}
 
-                                ><img src="heart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src={heart} alt="heart"  className='w-3cqw'/></button>
                             </li>}
                             {likeBtn && <li className="space-x-2 text-end">
                                 <button
@@ -292,7 +294,7 @@ useEffect(() => {
                                 }}
                                 // onClick={() => {dispatch(likeDisable()); removeCookies(drinkElem)}}
 
-                                ><img src="activeHeart.png" alt="heart"  className='w-3cqw'/></button>
+                                ><img src={activeHeart} alt="heart"  className='w-3cqw'/></button>
                             </li>}
                         </ul>
                     </div>

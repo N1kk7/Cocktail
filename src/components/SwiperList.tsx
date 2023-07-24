@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 import { ICocktails } from '../models/cocktailsModel';
+import bg from '../img/bg1.png'
 
 
 
@@ -29,7 +30,7 @@ console.log(theme)
                         <span className="font-bold w-max pt-5 font-frederica">{cocktails.strDrink}</span>
                     </div>
                 </div>
-              <img className='absolute bottom-0 left-0 -z-10 h-webkit rounded-3xl opacity-30' src="bg1.png" alt="" />
+              <img className='absolute bottom-0 left-0 -z-10 h-webkit rounded-3xl opacity-30' src={bg} alt="" />
 
               <Link to={`/cocktail/build/Drink/${cocktails.idDrink}`}>
                 <div className="flex flex-col justify-center items-center">

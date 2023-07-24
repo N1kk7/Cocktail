@@ -14,15 +14,121 @@
    .searchBlock{
     top: 10cqh;
    }
+   .textBlock{
+    padding: 2cqh ;
+   }
+  }
+  @media screen and (max-width: 768px){
+    .tittleBlock{
+        flex-wrap: unset;
+        // flex-direction: column-reverse;
+        .homeTittle{
+            line-height: unset;
+            .tittleText{
+                width: 40cqw;
+            // font-size: 4cqw;
+
+            }
+        }
+    }
   }
   @media screen and (max-width: 425px) {
-    .burgerBtn,
-    .themeBtn{
-        width: 14cqw;
+    .main{
+        margin-top: 17cqh;
     }
     .headerDay,
     .headerNight{
-        height: 90px;
+        border-bottom-width: inherit;
+        background-image: none;
     }
+    .menuBtn{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        width: 50cqw;
+        height: 100cqh;
+        position: absolute;
+        left: -50cqw;
+        background-color: rgba(255, 255, 255, 1);
+        transition: all ease 1s;
+        .mobileMenuClose{
+            display: block;
+            .buttonClose{
+                margin-left: 5cqw;
+            }
+        }
+        ul{
+            li{
+                display: block;
+            }
+        }
+         
+    }
+    .menuActive{
+        left: 0;
+        transition: all ease 1s;
+
+        
+        
+
+    }
+    .burgerBtn,
+    .themeBtn{
+        width: 7cqw;
+    }
+    .tittleBlock{
+        .homeTittle{
+            padding: 0;
+            min-width: 50cqw;
+            .tittleText{
+                margin: 0 0 2cqh 0;
+                width: 45cqw;
+                h2{
+                    line-height: 5cqh;
+                    font-size: 4cqw;
+                    span{
+                    font-size: 4cqw;
+
+                    }
+                }
+            }
+        }
+        .homeSwiper{
+           max-width: 30cqw;
+            .swiper-3d {
+                perspective: 130px;
+            }
+            .swiper-slide{
+                img{
+                    width: 40cqw;
+                }
+            }
+        }
+    }
+    .textBlock{
+        padding: 0 2cqh 10cqh 2cqh;
+    }
+    .parallaxTittle{
+        font-size: 4cqw;
+    }
+    .searchBlock{
+        position: absolute;
+        left: -20vw;
+        top: 85vh;
+        z-index: 123;
+    }
+    
+
+
+
+
+
+
+
+
+
+ 
 
    }

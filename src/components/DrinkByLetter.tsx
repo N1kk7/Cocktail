@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { IDrinkByLetter } from '../models/firstLetterModel'
 import { likeActive, likeDisable } from '../redux/themeSlice'
+import activeHeart from '../img/activeHeart.png'
+import heart from '../img/heart.png'
 
 interface drinkProps {
     card : IDrinkByLetter
@@ -91,14 +93,14 @@ export default function DrinkByLetter({card}: drinkProps) {
                                 setLike(true);
                                 checkFavorite(card);
                             }}
-                            ><img src="heart.png" alt="heart"  className='w-3cqw'/>
+                            ><img src={heart} alt="heart"  className='w-3cqw'/>
                         </button>}
                         {like &&<button
                             onClick={() => {
                                 setLike(false);
                                 removeFavorite(card)
                             }}
-                            ><img src="activeHeart.png" alt="heart"  className='w-3cqw'/>
+                            ><img src={activeHeart} alt="heart"  className='w-3cqw'/>
                         </button>}
                     </div>
                     

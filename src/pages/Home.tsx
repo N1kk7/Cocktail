@@ -3,6 +3,18 @@ import SwiperCore, { Autoplay } from 'swiper';
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
+import cartoon1 from '../img/cartoonImg/1.png'
+import cartoon2 from '../img/cartoonImg/2.png'
+import cartoon3 from '../img/cartoonImg/3.png'
+import cartoon4 from '../img/cartoonImg/4.png'
+import cartoon6 from '../img/cartoonImg/6.png'
+import cartoon8 from '../img/cartoonImg/8.png'
+import cartoon9 from '../img/cartoonImg/9.png'
+import cartoon10 from '../img/cartoonImg/10.png'
+import cartoon11 from '../img/cartoonImg/11.png'
+import cartoon12 from '../img/cartoonImg/12.png'
+import nightImg1 from '../img/nightImg/1.jpeg'
+
 
 // import "./styles.css";
 
@@ -39,7 +51,7 @@ export default function Home() {
 
   return (
     <>
-      {theme && <main className="flex flex-col items-center justify-center mt-32 z-30" style={{position: `${style}` as "unset"}}>
+      {theme && <main className="main flex flex-col items-center justify-center mt-32 z-30" style={{position: `${style}` as "unset"}}>
         {modal && <Modal key={Date.now()}/>}
 
       <section
@@ -47,13 +59,13 @@ export default function Home() {
 
           <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
-                  className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
+                  className="tittleText mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                   <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
                       Exclusive Cocktail App 
 
                       <span className="text-5xl text-blue-500 leading-relaxeds"
                       >
-                        For Your
+                      &nbsp; For Your&nbsp;
                       </span>
 
                       Enjoy Every Day
@@ -96,34 +108,40 @@ export default function Home() {
                 className="mySwiper"
               >
                 <SwiperSlide className='bg-none'>
-                  <img className='w-30cqw min-w mx-auto pt-24 ' src="./cartoonImg/1.png" alt="cartoon" />
+                  {/* <img className='w-30cqw min-w mx-auto pt-24 ' src="./cartoonImg/1.png" alt="cartoon" /> */}
+                  <img className='w-30cqw min-w mx-auto pt-24 ' src={cartoon1} alt="cartoon" />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-36 ' src="./cartoonImg/2.png" alt="cartoon" />
+                  {/* <img className='w-30cqw min-w mx-auto pt-36 ' src="./cartoonImg/2.png" alt="cartoon" /> */}
+                  <img className='w-30cqw min-w mx-auto pt-36 ' src={cartoon2} alt="cartoon" />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto' src="./cartoonImg/3.png" alt="cartoon" />
+                  {/* <img className='w-30cqw min-w mx-auto' src="./cartoonImg/3.png" alt="cartoon" /> */}
+                  <img className='w-30cqw min-w mx-auto' src={cartoon3} alt="cartoon" />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-28' src="./cartoonImg/4.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-28' src={cartoon4} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-20' src="./cartoonImg/6.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-20' src={cartoon6} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-16' src="./cartoonImg/8.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-16' src={cartoon8} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-28' src="./cartoonImg/9.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-28' src={cartoon9} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-40' src="./cartoonImg/10.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-40' src={cartoon10} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-25cqw min-w mx-auto pt-2 ' src="./cartoonImg/11.png" alt="cartoon" />
+                  <img className='w-25cqw min-w mx-auto pt-2 ' src={cartoon11} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-24' src="./cartoonImg/12.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-24' src={cartoon12} alt="cartoon" />
                 </SwiperSlide>
                 </Swiper>
               </div>
@@ -132,13 +150,15 @@ export default function Home() {
   
         <section
           className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
-          style={{backgroundImage: `url(./nightImg/1.jpeg)`}}
+          // style={{backgroundImage: `url(./nightImg/1.jpeg)`}}
+          style={{backgroundImage: `url(${nightImg1})`}}
+
           >
           <h1 className="parallaxTittle text-white text-5xl font-semibold mt-20 mb-10">
               Here is available more than 700 drinks!
           </h1>
         </section>
-      <section className="py-6 px-16 space-y-8">
+      <section className="textBlock py-6 px-16 space-y-8">
           <h1 className="text-4xl text-center my-10 font-tangerine text-indigo-900">About this App</h1>
 
           <p className="font-raleway leading-loose text-blue-800">    
@@ -180,7 +200,7 @@ export default function Home() {
       </section>
     <Footer/>
       </main>}
-      {!theme && <main className="flex flex-col items-center justify-center mt-32 z-30" style={{position: `${style}` as "unset"}}>
+      {!theme && <main className="main flex flex-col items-center justify-center mt-32 z-30" style={{position: `${style}` as "unset"}}>
         {modal && <Modal key={Date.now()}/>}
 
       <section
@@ -188,13 +208,13 @@ export default function Home() {
 
           <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
-                  className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
+                  className="tittleText mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                   <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-bisque">
                       Exclusive Cocktail App 
 
                       <span className="text-5xl text-blue-500 leading-relaxeds"
                       >
-                        For Your
+                      &nbsp; For Your&nbsp;
                       </span>
 
                       Enjoy Every Day
@@ -237,34 +257,40 @@ export default function Home() {
                 className="mySwiper"
               >
                 <SwiperSlide className='bg-none'>
-                  <img className='w-30cqw min-w mx-auto pt-24 ' src="./cartoonImg/1.png" alt="cartoon" />
+                  {/* <img className='w-30cqw min-w mx-auto pt-24 ' src="./cartoonImg/1.png" alt="cartoon" /> */}
+                  <img className='w-30cqw min-w mx-auto pt-24 ' src={cartoon1} alt="cartoon" />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-36 ' src="./cartoonImg/2.png" alt="cartoon" />
+                  {/* <img className='w-30cqw min-w mx-auto pt-36 ' src="./cartoonImg/2.png" alt="cartoon" /> */}
+                  <img className='w-30cqw min-w mx-auto pt-36 ' src={cartoon2} alt="cartoon" />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto' src="./cartoonImg/3.png" alt="cartoon" />
+                  {/* <img className='w-30cqw min-w mx-auto' src="./cartoonImg/3.png" alt="cartoon" /> */}
+                  <img className='w-30cqw min-w mx-auto' src={cartoon3} alt="cartoon" />
+
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-28' src="./cartoonImg/4.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-28' src={cartoon4} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-20' src="./cartoonImg/6.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-20' src={cartoon6} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-16' src="./cartoonImg/8.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-16' src={cartoon8} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-28' src="./cartoonImg/9.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-28' src={cartoon9} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-40' src="./cartoonImg/10.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-40' src={cartoon10} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-25cqw min-w mx-auto pt-2 ' src="./cartoonImg/11.png" alt="cartoon" />
+                  <img className='w-25cqw min-w mx-auto pt-2 ' src={cartoon11} alt="cartoon" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='w-30cqw min-w mx-auto pt-24' src="./cartoonImg/12.png" alt="cartoon" />
+                  <img className='w-30cqw min-w mx-auto pt-24' src={cartoon12} alt="cartoon" />
                 </SwiperSlide>
                 </Swiper>
               </div>
@@ -273,13 +299,13 @@ export default function Home() {
   
         <section
           className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
-          style={{backgroundImage: `url(./nightImg/1.jpeg)`}}
+          style={{backgroundImage: `url(${nightImg1})`}}
           >
           <h1 className="parallaxTittle text-bisque bg-customTextBg rounded-xl p-5 text-5xl font-semibold mt-20 mb-10">
               Here is available more than 700 drinks!
           </h1>
         </section>
-      <section className="py-6 px-16 space-y-8">
+      <section className="textBlock py-6 px-16 space-y-8">
           <h1 className="text-4xl text-center my-10 font-tangerine text-bisque">About this App</h1>
 
           <p className="font-raleway leading-loose text-zinc-400">    

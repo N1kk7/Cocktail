@@ -16,6 +16,9 @@ import DrinkByLetter from "../components/DrinkByLetter";
 import Footer from "../components/FooterBlock";
 import Modal from "../components/Modal";
 import { useEffect, useState } from "react";
+import alcoholImg from '../img/alcohol.jpeg'
+import noneAlcImg from '../img/non-alco.jpeg'
+import closeBtn from '../img/close.png'
 
 
 
@@ -67,7 +70,7 @@ useEffect(() => {
 
             <div className="alcohol flex items-center relative my-8">
               <div className="main-img relative z-10">
-                <img className='w-40cqw' src="alcohol.jpeg" alt="" />
+                <img className='w-40cqw' src={alcoholImg} alt="" />
 
               </div>
 
@@ -100,7 +103,7 @@ useEffect(() => {
                     </svg>
                   </button>}
                   {!stateAlc && <button className='relative flex items-center m-left-item p-4' onClick={() => {dispatch(eraseData("Alco"));dispatch(btnActive("Alco"));}}>
-                    <img className='w-2cqw ' src="close.png" alt="" />
+                    <img className='w-2cqw ' src={closeBtn} alt="" />
                     </button>}
                 </div>
               </div>}
@@ -132,7 +135,7 @@ useEffect(() => {
                     </svg>
                   </button>}
                   {!stateAlc && <button className='relative flex items-center m-left-item p-4' onClick={() => {dispatch(eraseData("Alco"));dispatch(btnActive("Alco"));}}>
-                    <img className='w-2cqw bg-stone-400 p-2 rounded-lg ' src="close.png" alt="" />
+                    <img className='w-2cqw bg-stone-400 p-2 rounded-lg ' src={closeBtn} alt="" />
                     </button>}
                 </div>
               </div>}
@@ -183,7 +186,7 @@ useEffect(() => {
 
             {theme && <div className="non-alcohol flex items-center relative my-8">
               <div className="main-img relative z-10">
-                <img className='w-40cqw h-35cqh' src="non-alco.jpeg" alt="" />
+                <img className='w-40cqw h-35cqh' src={noneAlcImg} alt="" />
               </div>
               <div className="info-block w-70cqw bg-custom-transp rounded-xl relative right-10 shadow-custom-shadow h-fit">
                 <div className="tittle h-14 border-b-2 border-black font-tangerine p-py-1cqh text-center" >
@@ -207,7 +210,7 @@ useEffect(() => {
                     </svg>
                   </button>}
                   {!stateNoneAlc && <button className='relative flex items-center m-left-item p-4' onClick={() => {dispatch(eraseData("NoneAlc"));dispatch(btnActive("NoneAlc"));}}>
-                    <img className='w-2cqw ' src="close.png" alt="" />
+                    <img className='w-2cqw ' src={closeBtn} alt="" />
                     </button>}
                 </div>
               </div>
@@ -215,7 +218,7 @@ useEffect(() => {
 
             {!theme && <div className="non-alcohol flex text-bisque items-center relative my-8">
               <div className="main-img relative z-10">
-                <img className='w-40cqw h-35cqh' src="non-alco.jpeg" alt="" />
+                <img className='w-40cqw h-35cqh' src={noneAlcImg} alt="" />
               </div>
               <div className="info-block w-70cqw rounded-xl relative right-10 shadow-custom-shadow h-fit">
                 <div className="tittle h-14 border-b-2 border-stone-500 font-tangerine p-py-1cqh text-center" >
@@ -239,7 +242,7 @@ useEffect(() => {
                     </svg>
                   </button>}
                   {!stateNoneAlc && <button className='relative flex items-center m-left-item p-4' onClick={() => {dispatch(eraseData("NoneAlc"));dispatch(btnActive("NoneAlc"));}}>
-                    <img className='w-2cqw bg-stone-400 p-2 rounded-lg  ' src="close.png" alt="" />
+                    <img className='w-2cqw bg-stone-400 p-2 rounded-lg  ' src={closeBtn} alt="" />
                     </button>}
                 </div>
               </div>
@@ -297,8 +300,8 @@ useEffect(() => {
               </div>}
               <FirstsLetter/>
               {firstLetter && <button className='relative flex items-center m-left-item p-4' onClick={() => {dispatch(eraseData("FirstLetter"));dispatch(btnDisable("FirstLetter"));}}>
-                    {theme && <img className='w-2cqw' src="close.png" alt="" />}
-                    {!theme && <img className='w-2cqw bg-stone-400 p-2 rounded-lg ' src="close.png" alt="" />}
+                    {theme && <img className='w-2cqw' src={closeBtn} alt="" />}
+                    {!theme && <img className='w-2cqw bg-stone-400 p-2 rounded-lg ' src={closeBtn} alt="" />}
 
                     </button>}
               {/* {drinkByLetter.map((card: IDrinkByLetter) => console.log(card))} */}
