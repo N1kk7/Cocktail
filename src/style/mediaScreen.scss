@@ -34,34 +34,74 @@
   }
   @media screen and (max-width: 425px) {
     .main{
-        margin-top: 17cqh;
+        margin-top: 10cqh;
     }
     .headerDay,
     .headerNight{
         border-bottom-width: inherit;
         background-image: none;
+        opacity: unset;
     }
-    .menuBtn{
-        display: block;
+    .button-group{
+        align-items: baseline;
+        position: relative;
+        // top: 2cqh;
+        .menuBtn{
+            position: relative;
+            top: 2cqh;
+            display: block;
+            .btnWrapper {
+                top: 0;
+            }
+        }
+        .themeBtns{
+            position: relative;
+            top: 2cqh;
+        }
+        .burgerBtn,
+        .themeBtn{
+        width: 7cqw;
     }
+    }
+    
 
     .menu{
         display: block;
-        width: 50cqw;
+        width: 100vw;
         height: 100cqh;
         position: absolute;
-        left: -50cqw;
-        background-color: rgba(255, 255, 255, 1);
+        left: -100vw;
+        // background-color: rgb(186, 235, 252);
         transition: all ease 1s;
+        z-index: 10;
         .mobileMenuClose{
             display: block;
             .buttonClose{
                 margin-left: 5cqw;
+                z-index: 10;
             }
         }
         ul{
+            background-color: rgb(186, 235, 252);
+            display: flex;
+            height: -webkit-fill-available;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            width: 50vw;
+            top: 0;
+
             li{
                 display: block;
+                font-size: 5cqw;
+                line-height: 5cqh;
+                background-color: rgb(59 130 246);
+                // border: 1px solid rgb(0, 0, 0);
+                border-radius: 1cqw;
+                width: 35cqw;
+                margin: 0 auto 3cqh;
+                color: white;
+                font-size: 3cqw;
             }
         }
          
@@ -69,16 +109,16 @@
     .menuActive{
         left: 0;
         transition: all ease 1s;
+        backdrop-filter: blur(5px);
+        
 
         
         
 
     }
-    .burgerBtn,
-    .themeBtn{
-        width: 7cqw;
-    }
+    
     .tittleBlock{
+        padding-bottom: 6cqh;
         .homeTittle{
             padding: 0;
             min-width: 50cqw;
@@ -105,6 +145,17 @@
                     width: 40cqw;
                 }
             }
+        }
+    }
+    .sectionBtn{
+        width: fit-content;
+        position: absolute;
+        margin-top: 5cqh;
+        width: 85cqw;
+        button{
+            display: inline-block;
+            padding: 3cqw;
+            margin: 2cqw;
         }
     }
     .textBlock{

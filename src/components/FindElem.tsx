@@ -93,12 +93,12 @@ useEffect(() => {
     burgerMenuState ? setMenuClass("searchActive") : setMenuClass('');
 
     // getMenuClass();
-}, []);
+}, [burgerMenuState]);
 
   return (
 
 
-    <div className="searchBlock rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit fixed top-28 right-4 z-20">
+    <div className="searchBlock rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5  max-w-fit m-0 h-fit my-auto z-10">
         <div className="mx-auto max-w-md flex">
 
                 <form 
@@ -107,7 +107,7 @@ useEffect(() => {
                 className="relative mx-auto w-max">
                 <input type="search" 
                 placeholder='Find drink by name'
-                        className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4" 
+                        className="peer cursor-pointer relative z-10 h-8 w-8 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4" 
                         value={inputValue}
 
                 onKeyDown={(event:any) => {getEnter(event)}}

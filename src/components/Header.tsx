@@ -30,14 +30,23 @@ export default function Header() {
 
 
 
-    const burgerMenu = ():any => {
+    // const burgerMenu = ():any => {
+    const burgerMenu = () => {
+
+        const activeBurgerMenu = () => {
+            document.body.style.overflow ='hidden';
+            setMobileMenu('menuActive');
+
+        };
+        const hideBurgerMenu = () => {
+            document.body.style.overflow = 'unset';
+            setMobileMenu('');
+        };
+
         dispatch(burgerBtn())
-        burgerMenuState ? setMobileMenu('menuActive') : setMobileMenu('');
-        // console.log("click");
+        burgerMenuState ?  activeBurgerMenu() :  hideBurgerMenu();
 
-
-
-    }
+    };
 
     
 
@@ -46,53 +55,56 @@ export default function Header() {
   return (
     <Router>
         {theme && <div className='backgroundDay absolute'>
-            <div className="headerDay border-b-2 w-full fixed">
+            <div className="headerDay border-b-2 w-full h-24 fixed">
                 
-                <div className="button-group flex justify-between px-5 ">
+                <div className="button-group flex justify-between px-5 h-inherit items-center">
                     <div className="menuBtn hidden">
-                        <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" onClick={() => burgerMenu()}
+                        <div className="btnWrapper relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" 
+                        onClick={() => burgerMenu()}
                         >
                                     <div className="mx-auto max-w-md">
                                         <img className='burgerBtn w-2cqw border-2 border-white rounded-md' src={burger} alt="" />
                                     </div>
                                 </div>
-                    </div>
-                <div className={`menu ${mobileMenu}`}>
-                    <div className="mobileMenuClose hidden">
-                        <div className="closeMenuBtn">
-                            <div className="buttonClose relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" onClick={() => burgerMenu()}
-                            >
-                                        <div className="mx-auto max-w-md">
-                                            <img className='burgerBtn w-2cqw border-2 border-white rounded-md' src={closeBtn} alt="" />
-                                        </div>
-                                    </div>
-                        </div>
-
-                    </div>
-                <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5 text-indigo-900'>
-                    <li className='inline-block px-5'><Link to={'cocktail/build/'}> Home </Link></li>
-                    <li className='inline-block px-5'><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
-                    <li className='inline-block px-5'><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
-                    <li className='inline-block px-5'><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
-                    <li className='inline-block px-5'><Link to={'cocktail/build/Latest'}> Latest </Link></li>
-                </ul>
                 </div>
                 <div className="themeBtns">
-                    {theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
+                    {theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit cursor-pointer z-10"
                         onClick={() => dispatch(nightTheme())}>
                                 <div className="mx-auto max-w-md">
                                     <img className='themeBtn w-2cqw border-2 border-white rounded-md' src={moon} alt="" />
                                 </div>
                             </div>}
-                        {!theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
+                        {!theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit cursor-pointer z-10"
                         onClick={() => dispatch(dayTheme())}>
                                 <div className="mx-auto max-w-md">
                                     <img className='themeBtn w-2cqw border-2 border-white rounded-md' src={sun} alt="" />
                                 </div>
                             </div>}
                 </div>
+                <div className={`menu fixed w-webkit ${mobileMenu}`}>
+                    <div className="mobileMenuClose hidden">
+                        <div className="closeMenuBtn">
+                            <div className="buttonClose relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" 
+                            onClick={() => burgerMenu()}
+                            >
+                                        <div className="mx-auto max-w-md">
+                                            <img className='burgerBtn w-3cqw border-2 border-white rounded-md' src={closeBtn} alt="" />
+                                        </div>
+                                    </div>
+                        </div>
+
+                    </div>
+                    <ul className='list-none font-raleway tracking-widest text-2cqw text-center text-indigo-900 h-inherit'>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/'}> Home </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Latest'}> Latest </Link></li>
+                    </ul>
+                </div>
+                <FindElem/>
             </div>
-            </div>
+        </div>
             
         <Routes>
             <Route path="cocktail/build/" element={<Home />}/>
@@ -104,41 +116,22 @@ export default function Header() {
 
             
         </Routes>
-        <FindElem/>
+        {/* <FindElem/> */}
     </div>}
     {!theme && <div className='backgroundNight absolute'>
-            <div className="headerNight border-b-2 w-full fixed">
+            <div className="headerNight border-b-2 w-full h-24 fixed">
                 
-                <div className="button-group flex justify-between px-5 ">
-                    <div className="menuBtn ">
-                        <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" onClick={() => burgerMenu()}>
+                <div className="button-group flex justify-between px-5 h-inherit items-center">
+                    <div className="menuBtn hidden">
+                        <div className="btnWrapper relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" 
+                        onClick={() => burgerMenu()}>
                             <div className="mx-auto max-w-md">
                                 <img className='burgerBtn w-2cqw border-2 border-white rounded-md' src={burger} alt="" />
                             </div>
                         </div>
                     </div>
-                <div className={`menu ${mobileMenu}`}>
-                    <div className="mobileMenuClose hidden">
-                            <div className="closeMenuBtn">
-                                <div className="buttonClose relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" onClick={() => burgerMenu()}
-                                >
-                                            <div className="mx-auto max-w-md">
-                                                <img className='burgerBtn w-2cqw border-2 border-white rounded-md' src={closeBtn} alt="" />
-                                            </div>
-                                        </div>
-                            </div>
-
-                        </div>
-                    <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5'>
-                        <li className='inline-block px-5'><Link to={'cocktail/build/'}> Home </Link></li>
-                        <li className='inline-block px-5'><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
-                        <li className='inline-block px-5'><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
-                        <li className='inline-block px-5'><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
-                        <li className='inline-block px-5'><Link to={'cocktail/build/Latest'}> Latest </Link></li>
-                    </ul>
-                </div>
-                <div className="themeBtns">
-                    {theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4 "
+                    <div className="themeBtns">
+                    {theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit cursor-pointer z-10"
                     onClick={() => dispatch(nightTheme())}>
                             <div className="mx-auto max-w-md">
                                 {/* <img className='w-2cqw border-2 border-white rounded-md' src="moon.png" alt="" /> */}
@@ -146,7 +139,7 @@ export default function Header() {
 
                             </div>
                         </div>}
-                    {!theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4"
+                    {!theme && <div className="relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit cursor-pointer z-10"
                     onClick={() => dispatch(dayTheme())}>
                             <div className="mx-auto max-w-md">
                                 {/* <img className='w-2cqw border-2 border-white rounded-md' src="sun.png" alt="" /> */}
@@ -155,8 +148,31 @@ export default function Header() {
                             </div>
                         </div>}
                 </div>
+                <div className={`menu fixed w-webkit ${mobileMenu}`}>
+                    <div className="mobileMenuClose hidden">
+                            <div className="closeMenuBtn">
+                                <div className="buttonClose relative rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto max-w-fit top-4" 
+                                onClick={() => burgerMenu()}
+                                >
+                                            <div className="mx-auto max-w-md">
+                                                <img className='burgerBtn w-3cqw border-2 border-white rounded-md' src={closeBtn} alt="" />
+                                            </div>
+                                        </div>
+                            </div>
+
+                        </div>
+                    <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5'>
+                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/'} > Home </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Latest'}> Latest </Link></li>
+                    </ul>
+                </div>
+                <FindElem/>
+                
             </div>
-            </div>
+        </div>
             
         <Routes>
             <Route path="cocktail/build//" element={<Home />}/>
@@ -168,7 +184,7 @@ export default function Header() {
 
             
         </Routes>
-        <FindElem/>
+        {/* <FindElem/> */}
     </div>}
     </Router>
   )

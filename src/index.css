@@ -24,7 +24,7 @@
 .backgroundDay{
   background-color: #fff;
   min-height: 100cqh;
-  width: 100cqw;
+  width: -webkit-fill-available;
   background-image: linear-gradient(60deg, #fdfedf, #9fd6f8, #e7c1fb);
   background-size: 600% 600%;
   animation: bgAnimatedGradient 15s infinite linear;
@@ -32,7 +32,7 @@
 .backgroundNight{
   background-color: #fff;
   min-height: 100cqh;
-  width: 100cqw;
+  width: -webkit-fill-available;
   background-image: linear-gradient(60deg, #18021c, #060310, #0e0414);
   background-size: 600% 600%;
   animation: bgAnimatedGradient 15s infinite linear;

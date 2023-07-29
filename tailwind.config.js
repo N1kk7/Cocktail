@@ -12,6 +12,7 @@ module.exports = {
           },
         fontSize: {
             '1cqw' : '1cqw',
+            '1.5' : '1.5cqw',
             '2cqw' : '2cqw',
             '3cqw' : '3cqw',
             '4cqw' : '4cqw',
@@ -38,6 +39,7 @@ module.exports = {
             '65cqw' : '65cqw',
             '70cqw' : '70cqw',
             '100cqw' : '100cqw',
+            'webkit' : '-webkit-fill-available',
 
 
         },
@@ -62,6 +64,7 @@ module.exports = {
           '100cqh' : '100cqh',
           '100cqh' : '100cqh',
           'webkit' : '-webkit-fill-available',
+          'inherit' : 'inherit',
 
 
         },
@@ -74,6 +77,9 @@ module.exports = {
         maxHeight:{
           '10cqh' : '10cqh',
           '20cqh' : '20cqh',
+      },
+      maxWidth:{
+        'customFitCont' : 'fit-content',
       },
       top: {
         '7cqh' : '7cqh',
@@ -100,6 +106,8 @@ module.exports = {
         },
         padding: {
           'py-1cqh' : '1cqh 0',
+          'px-1cqw' : '0 1cqw',
+
           '2cqw' : '2cqw'
         },
         margin: {

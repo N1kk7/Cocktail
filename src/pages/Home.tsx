@@ -55,7 +55,7 @@ export default function Home() {
         {modal && <Modal key={Date.now()}/>}
 
       <section
-          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md pb-20">
+          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
           <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
@@ -77,7 +77,7 @@ export default function Home() {
                   </p>
               </div>
 
-              <div className="text-center lg:text-left">
+              <div className="sectionBtn text-center lg:text-left">
                   <button
                       className="block visible py-4 px-8 mb-4 text-xs font-semibold tracking-wide leading-none text-white bg-blue-500 rounded cursor-pointer sm:mr-3 sm:mb-0 sm:inline-block"
                       >Key Features</button
@@ -204,7 +204,7 @@ export default function Home() {
         {modal && <Modal key={Date.now()}/>}
 
       <section
-          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md pb-20">
+          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
           <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
