@@ -27,24 +27,32 @@ export default function Header() {
     const theme = useSelector((state:any) => state.theme.theme);
     const burgerMenuState = useSelector((state:any) => state.theme.burgerMenu)
     const dispatch = useDispatch();
+console.log(burgerMenuState)
 
+    const activeBurgerMenu = () => {
+        
+        document.body.style.overflow ='hidden';
+        setMobileMenu('menuActive');
 
+    };
+    const hideBurgerMenu = () => {
+        if(burgerMenuState) {
+            dispatch(burgerBtn())
 
+        }
+        document.body.style.overflow = 'unset';
+        setMobileMenu('');
+    };
     // const burgerMenu = ():any => {
     const burgerMenu = () => {
 
-        const activeBurgerMenu = () => {
-            document.body.style.overflow ='hidden';
-            setMobileMenu('menuActive');
+        // if (mobileMenu == 'activeMenu') {
+            if(!burgerMenuState) {
+                dispatch(burgerBtn())
 
-        };
-        const hideBurgerMenu = () => {
-            document.body.style.overflow = 'unset';
-            setMobileMenu('');
-        };
-
-        dispatch(burgerBtn())
-        burgerMenuState ?  activeBurgerMenu() :  hideBurgerMenu();
+            }
+            burgerMenuState ? hideBurgerMenu()  :    activeBurgerMenu();
+        // }
 
     };
 
@@ -95,11 +103,11 @@ export default function Header() {
 
                     </div>
                     <ul className='list-none font-raleway tracking-widest text-2cqw text-center text-indigo-900 h-inherit'>
-                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/'}> Home </Link></li>
-                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
-                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
-                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
-                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Latest'}> Latest </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/'}> Home </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
+                        <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Latest'}> Latest </Link></li>
                     </ul>
                 </div>
                 <FindElem/>
@@ -162,11 +170,11 @@ export default function Header() {
 
                         </div>
                     <ul className='list-none font-raleway tracking-widest text-2cqw text-center py-5'>
-                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/'} > Home </Link></li>
-                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
-                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
-                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
-                        <li className='inline-block px-5 text-1.5' onClick={() => burgerMenu()}><Link to={'cocktail/build/Latest'}> Latest </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/'} > Home </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Cocktail'}> Cocktail </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
+                        <li className='inline-block px-5 text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Latest'}> Latest </Link></li>
                     </ul>
                 </div>
                 <FindElem/>

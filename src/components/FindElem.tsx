@@ -18,7 +18,7 @@ export default function FindElem() {
     //       const response: any = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
 
     //       console.log(response)
-          console.log(menuClass);
+        //   console.log(menuClass);
           
       
     //     }

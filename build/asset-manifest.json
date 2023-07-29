@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://n1kk7.github.io/cocktail/build/static/css/main.a6b09df0.css",
-    "main.js": "https://n1kk7.github.io/cocktail/build/static/js/main.6dedd9b8.js",
+    "main.css": "https://n1kk7.github.io/cocktail/build/static/css/main.eb3cd6e0.css",
+    "main.js": "https://n1kk7.github.io/cocktail/build/static/js/main.319a29db.js",
     "static/media/bg1.png": "https://n1kk7.github.io/cocktail/build/static/media/bg1.d767ba90fccde550de65.png",
     "static/media/non-alco.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/non-alco.3a65813455305f756622.jpeg",
     "static/media/8.png": "https://n1kk7.github.io/cocktail/build/static/media/8.ee9a2c019cd9361b4e8a.png",
@@ -19,11 +19,11 @@
     "static/media/activeHeart.png": "https://n1kk7.github.io/cocktail/build/static/media/activeHeart.068b4ca28003742a20e5.png",
     "static/media/heart.png": "https://n1kk7.github.io/cocktail/build/static/media/heart.e73c82c336e44596e754.png",
     "index.html": "https://n1kk7.github.io/cocktail/build/index.html",
-    "main.a6b09df0.css.map": "https://n1kk7.github.io/cocktail/build/static/css/main.a6b09df0.css.map",
-    "main.6dedd9b8.js.map": "https://n1kk7.github.io/cocktail/build/static/js/main.6dedd9b8.js.map"
+    "main.eb3cd6e0.css.map": "https://n1kk7.github.io/cocktail/build/static/css/main.eb3cd6e0.css.map",
+    "main.319a29db.js.map": "https://n1kk7.github.io/cocktail/build/static/js/main.319a29db.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6b09df0.css",
-    "static/js/main.6dedd9b8.js"
+    "static/css/main.eb3cd6e0.css",
+    "static/js/main.319a29db.js"
   ]
 }
