@@ -61,7 +61,7 @@ useEffect(() => {
     <>
         {modal && <Modal key={Date.now()}/>}
 
-        <div className="main mt-40 " style={{position: `${style}` as "unset"}}>
+        <div className="cocktailPage main mt-40 " style={{position: `${style}` as "unset"}}>
 
 {/* <div style={{backgroundImage: `url("bar.jpeg")`}} className="flex items-center justify-center bg-gradient-to-t h-screen p-6 bg-no-repeat bg-center"> */}
 

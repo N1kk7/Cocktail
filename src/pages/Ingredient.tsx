@@ -44,15 +44,15 @@ useEffect(() => {
 
     <>
     {/* <!-- Card List Section --> */}
-            <section  className="pb-10 pt-20 px-12">
+            <section  className="ingredient pb-10 pt-20 px-12">
                 {/* <!-- Card Grid --> */}
                 <div
-                    className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    className="ingredientSection grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                                 {/* <!-- Card Item --> */}
 
                                 {listIngredient.map((item: any, index) => <div key={index} className='rounded-3xl border-2 border-violet-300 shadow-custom-shadow'>
 
-<div  className="flex justify-between py-6 px-4  w-22cqw h-fit min-h-40cqh flex-col mx-auto ">
+<div  className="ingredientImg flex justify-between py-6 px-4  w-22cqw h-fit min-h-40cqh flex-col mx-auto ">
             <div className="flex items-center space-x-4 flex-col">
                 <img src={`https://www.thecocktaildb.com/images/ingredients/${item.strIngredient1}-Medium.png`} className='shadow-custom-shadow' alt=""/>
                 <div className="flex flex-col space-y-1">
@@ -66,7 +66,7 @@ useEffect(() => {
                 <button
 
                 
-                    className="relative text-center h-4cqh w-11cqw transition-all duration-500
+                    className="ingredientBtn relative text-center h-4cqh w-11cqw transition-all duration-500
                         before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-r from-pink-500 via-yellow-400 to-emerald-300 before:transition-all
                         before:duration-300 before:opacity-50 before:hover:opacity-0 before:hover:scale-50
                         after:absolute after:top-0 after:left-0 after:w-full after:h-full after:opacity-0 after:transition-all after:duration-300

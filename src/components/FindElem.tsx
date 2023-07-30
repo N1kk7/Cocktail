@@ -8,10 +8,13 @@ export default function FindElem() {
     // let nameRequest:string = '';
     const [inputValue, setValueInput] = useState('');
     const [menuClass, setMenuClass] = useState('');
+    // const [searchElemClass, setSearchElemClass] = useState('');
+
     const burgerMenuState = useSelector((state:any) => state.theme.burgerMenu)
     const dispatch = useDispatch()
 
     // const getEpisodes = (name?:any) => {
+        // console.log(burgerMenuState);
         
       
     //     async function fetchName(name?:any) {
@@ -98,7 +101,7 @@ useEffect(() => {
   return (
 
 
-    <div className="searchBlock rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5  max-w-fit m-0 h-fit my-auto z-10">
+    <div className={`searchBlock ${menuClass} rounded-2xl bg-white px-2 py-2 shadow-xl ring-1 ring-gray-900/5  max-w-fit m-0 h-fit my-auto z-10`}>
         <div className="mx-auto max-w-md flex">
 
                 <form 

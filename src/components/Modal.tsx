@@ -37,16 +37,16 @@ export default function Modal() {
                         onClick={() => dispatch(closeModal())}
                         >
                                     <div className="mx-auto max-w-md">
-                                        <img className='w-2cqw border-2 border-white rounded-md' src={closeBtn} alt="" />
+                                        <img className='modalCloseBtn w-2cqw border-2 border-white rounded-md' src={closeBtn} alt="" />
                                     </div>
                                 </div>
                     </div>
             <div className="modal w-65cqw border-2 rounded-3xl h-70cqh overflow-auto mx-auto relative top-36 bg-whiteBlur">
                 <div className="modalItem overflow-hidden">
-                    <div className="topBg w-65cqw h-5cqh fixed backdrop-blur-sm rounded-t-3xl"></div>
+                    <div className="topBg w-65cqw h-5cqh fixed backdrop-blur-sm rounded-t-3xl hidden" ></div>
                     <div className="itemsWrapper pt-10">
                     {stateDrinkName.map((elem: IDrinkByLetter) => <div className="py-6 m-auto" key={elem.idDrink}>
-                    <div className="flex w-40cqw bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+                    <div className="modalCard flex w-40cqw bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
                         <div className="w-1/3 bg-cover" style={{backgroundImage: `url(${elem.strDrinkThumb})`}}>
                         </div> 
                         <div className="w-2/3 p-4">

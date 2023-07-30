@@ -69,7 +69,7 @@ export default function Home() {
       <section
           className="tittleBlock flex flex-wrap justify-evenly items-center font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
-          <div className="homeTittle px-3 w-full lg:w-2/5">
+          <div className="homeTittle px-3 w-full lg:w-20cqw">
               <div
                   className="tittleText mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                   <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
@@ -298,7 +298,7 @@ export default function Home() {
           className="tittleBlock flex flex-wrap justify-evenly items-center font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
 
-          <div className="homeTittle px-3 w-full lg:w-2/5">
+          <div className="homeTittle px-3 w-full lg:w-20cqw">
               <div
                   className="tittleText mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                   <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-bisque">
@@ -318,7 +318,7 @@ export default function Home() {
                   </p>
               </div>
 
-              <div className="text-center lg:text-left">
+              <div className="sectionBtn text-center lg:text-left">
                   <button
                       className="block visible py-4 px-8 mb-4 text-xs font-semibold tracking-wide leading-none text-white bg-blue-500 rounded cursor-pointer sm:mr-3 sm:mb-0 sm:inline-block"
                       >Key Features</button

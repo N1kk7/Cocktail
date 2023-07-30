@@ -59,6 +59,18 @@
 
            }
     }
+    //ingredient
+
+    .ingredientSection{
+        // grid-template-columns: repeat(2, minmax(0, 1fr));
+        // gap: 1rem;
+        // .ingredientImg{
+            
+        // }
+        .ingredientBtn{
+            width: 25cqw;
+        }
+    }
 
 
 
@@ -111,6 +123,46 @@
 
 
     }
+    // cocktail 
+    .cocktailPage{
+        .container{
+            width: 90cqw;
+        }
+    }
+    .listBtn{
+        width: inherit;
+        padding: 0 1cqh;
+        font-size: 1.5cqw;
+    }
+    .listCard{
+        min-height: 30cqh;
+    }
+    .nameCocktail{
+        margin-left: 0;
+        margin-right: 0;
+        span{
+            width: fit-content;
+            font-size: 2cqw;
+
+        }
+    }
+    .letterDrink{
+        width: 90cqw;
+
+    }
+    .modalBg{
+        .modalCloseBtn{
+            width: 7cqw;
+        }
+        .modalCard{
+            width: 75cqw;
+        }
+        .modal{
+            width: 98cqw;
+        }
+
+    }
+    
   }
   @media screen and (max-width: 600px) {
     .themeBtns{
@@ -137,6 +189,15 @@
             }
         }
         
+    }
+    //ingredient
+
+    .ingredientSection{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        .ingredientBtn{
+
+        }
     }
 
 
@@ -218,6 +279,7 @@
                 }
             }
         }
+        
          
     }
     .menuActive{
@@ -237,7 +299,7 @@
             padding: 0;
             min-width: 50cqw;
             .tittleText{
-                margin: 0 0 2cqh 0;
+                // margin: 0 0 2cqh 0;
                 width: 45cqw;
                 h2{
                     line-height: 5cqh;
@@ -280,11 +342,27 @@
         font-size: 4cqw;
     }
     .searchBlock{
-        position: absolute;
-        left: -20vw;
+        position: fixed;
+        transition: all ease 0.7s;
+        left: 105vw;
+
         top: 85vh;
         z-index: 123;
     }
+    .searchActive{
+        transition: all ease 0.7s;
+
+        left: 5vw;
+
+    }
+
+
+
+
+
+
+
+    
     
 
 
@@ -298,3 +376,26 @@
  
 
    }
+
+   @media screen and (max-width: 425px) {
+    .ingredient{
+        padding: 1cqh 0.5cqh;
+        .ingredientSection{
+            // grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1cqw;
+            
+            // .ingredientImg{
+                
+            // }
+            .ingredientBtn{
+                width: 25cqw;
+            }
+    
+       }
+
+    }
+
+   //ingredient
+
+   
+}
