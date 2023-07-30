@@ -58,6 +58,7 @@ module.exports = {
           '12cqh' : '12cqh',
           '15cqh' : '15cqh',
           '22cqh' : '22cqh',
+          '30cqh' : '30cqh',
           '35cqh' : '35cqh',
           '40cqh' : '40cqh',
           '45cqh' : '45cqh',

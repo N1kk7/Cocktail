@@ -107,6 +107,7 @@ export default function Header() {
                         <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Ingredient'}> Ingredient </Link></li>
                         <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Favorite'}> Favorite </Link></li>
                         <li className='inline-block p-px-1cqw text-1.5' onClick={() => hideBurgerMenu()}><Link to={'cocktail/build/Latest'}> Latest </Link></li>
+                        
                     </ul>
                 </div>
                 <FindElem/>

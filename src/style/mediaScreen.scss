@@ -142,11 +142,14 @@
         font-size: 1.5cqw;
     }
     .listCard{
-        min-height: 30cqh;
+        min-height: 35cqh;
+        .swiperCardBg{
+            min-height: 35cqh;
+        }
     }
     .nameCocktail{
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0 !important;
+        // margin-right: 0;
         span{
             width: fit-content;
             font-size: 2cqw;
@@ -241,6 +244,11 @@
                     border-radius: 5cqw;
                     margin: 5cqw;
                     padding: 2cqw;
+                    height: 35cqh;
+                    overflow: auto;
+                }
+                .darkText{
+                    color: black;
                 }
 
             }
@@ -497,6 +505,14 @@
     }
 
    //ingredient
+
+   .listCard{
+    min-height: 25cqh;
+    width: 25cqw;
+    .swiperCardBg{
+        min-height: 25cqh;
+    }
+}
 
    
 }

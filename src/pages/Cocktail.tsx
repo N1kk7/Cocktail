@@ -115,7 +115,7 @@ useEffect(() => {
                   <span className='pl-16 text-4xl '>Alcohol Drink</span>
                 </div>
                 <div className="description w-47cqw mx-auto font-raleway italic p-2">
-                  <p>Alcoholic cocktails are very diverse, represented by both one type of alcohol and several. 
+                  <p >Alcoholic cocktails are very diverse, represented by both one type of alcohol and several. 
                     There are cocktails with vodka, cocktails with rum, cocktails with martini, cocktails with whiskey, 
                     cocktails with tequila, cocktails with absinthe, cocktails with malibu, cocktails with cognac, 
                     cocktails with baileys, cocktails with gin, cocktails with liqueur, cocktails with sambuca, cocktails with champagne, 
@@ -225,7 +225,7 @@ useEffect(() => {
                   <span className='pl-16 text-4xl '>None Alcohol Drink</span>
                 </div> 
                 <div className="description w-47cqw mx-auto font-raleway italic p-2">
-                  <p>Making non-alcoholic cocktails at home is not only easy, but also fascinating. 
+                  <p className="darkText">Making non-alcoholic cocktails at home is not only easy, but also fascinating. 
                     Some names are worth something: kobler, flip, phiz, sherbet, julep, eggnog, punch, bowl, cruchon, frappe... 
                     We have almost a thousand recipes for non-alcoholic cocktails, each of which will delight you with its taste.
                     If you prepare a non-alcoholic cocktail according to our recipe, take a photo of your non-alcoholic cocktail 

@@ -236,24 +236,24 @@ useEffect(() => {
             </div>
         </div>
         </div>}
-        {!theme && <div className="">
+        {!theme && <div className="drink">
         <div className="container m-auto px-6 py-20 md:px-12 lg:px-20">
             <div className="m-auto text-center lg:w-8/12 xl:w-7/12">
                 <h2 className="text-2xl text-bisque font-frederica pt-8 md:text-4xl">Information of drink prepare</h2>
             </div>
-            <div className="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
+            <div className="drinkWrapper mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
 
                 <div className="relative group md:w-6/12 lg:w-7/12">
                     <div aria-hidden="true" className="absolute top-0 w-full h-full rounded-2xl border-2 border-stone-500 shadow-lg transition duration-500 group-hover:scale-105 "></div>
                         <div className="relative  md:rounded-r-2xl">
                         </div>
-                        <div className="ingredientWWrap text-start py-24 px-10">
+                        <div className="ingredientWrap text-start py-24 px-10">
                             { ingrImg.map((elem: any) => <div className='card inline-block px-5 py-1 align-top' key={elem}><img className='ingredientImg relative z-20 flex hover:transition hover:duration-500 hover:scale-110' src={`https://www.thecocktaildb.com/images/ingredients/${elem}-Small.png`} alt=''></img>
                             <span className='relative block text-center max-w-min mx-auto pt-5 font-tangerine text-4xl text-bisque'>{elem}</span>
                             </div>)}
                         </div>
                     </div> 
-                <div className="relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12 bg-customDark">
+                <div className="drinkCard relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12 bg-customDark">
                     <div aria-hidden="true" className="absolute top-0 w-full h-full rounded-2xl border-2 border-stone-500 shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"></div>
                     <div className="relative p-6 space-y-6 lg:p-8">
 
