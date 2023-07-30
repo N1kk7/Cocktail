@@ -1,40 +1,150 @@
-@media screen and (min-width: 768px) {
-   .tittleBlock{
-    justify-content: space-around;
-        .homeTittle{
-            width: 45cqw;
-        };
-        .homeSwiper{
-            width: 35cqw;
+@media screen and (max-width: 1024px) {
+    //header
+    .headerDay,
+        .headerNight{
+            position: relative;
+            .themeBtns{
+                img{
+                    width: 3cqw;
+                }
+            }
         }
-   }
-   .parallaxTittle{
-    font-size: 5cqw;
-   }
-   .searchBlock{
-    top: 10cqh;
-   }
-   .textBlock{
-    padding: 2cqh ;
-   }
-  }
+        .menu{
+            position: absolute;
+        }
+    //main
+    .main{
+        margin-top: 15cqh;
+        
+        .tittleBlock{
+            justify-content: space-around;
+
+            .homeTittle{
+                width: 35cqw;
+            }
+        }
+        .homeSwiper{
+            width: 25cqw;
+            margin: 0 10cqw;
+        }
+        .parallaxTittle{
+            font-size: 4cqw;
+           }
+        
+           .textBlock{
+            padding: 2cqh ;
+           }
+           .aboutCocktail{
+               .container{
+                width: 95cqw;
+                    .itemBlock{
+                        .itemTittleRight,
+                        .itemTittleLeft{
+                            h1{
+                                width: 30cqw;
+                                margin: 3cqh 0;
+                            }
+                        }
+                        .textRight,
+                        .textLeft{
+                            p{
+                            line-height: 3cqw;  
+                            padding: 5cqh;
+                            }
+                        }
+                        
+                    }
+               }
+
+
+           }
+    }
+
+
+
+
+
+
+
+}
+
   @media screen and (max-width: 768px){
+    .themeBtns{
+        img{
+            width: 4cqw !important ;
+        }
+    }
     .tittleBlock{
         flex-wrap: unset;
         // flex-direction: column-reverse;
         .homeTittle{
             line-height: unset;
+            width: 50cqw !important;
             .tittleText{
-                width: 40cqw;
-            // font-size: 4cqw;
+                width: 45cqw;
+            // // font-size: 4cqw;
 
             }
         }
     }
+    .aboutCocktail{
+        width: -webkit-fill-available;
+        .container{
+            width: 85cqw !important;
+            margin: 0 auto;
+             .itemBlock{
+                 .itemTittleRight,
+                 .itemTittleLeft{
+                     h1{
+
+                         width: 40cqw !important;
+                     }
+                 }
+                 .rightImg,
+                 .leftImg{
+                    display: flex;
+                    align-items: center;
+                 }
+                 
+             }
+        }
+
+
+    }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 600px) {
+    .themeBtns{
+        img{
+            width: 5cqw !important ;
+        }
+    }
+   
+    .itemBlock{
+        .itemTittleRight,
+        .itemTittleLeft{
+            h1{
+                padding: 2cqh;
+                width: 40cqw !important;
+                font-size: 6cqw;
+            }
+        }
+        .textRight,
+        .textLeft{
+            p{
+                font-size: 2cqw;
+                line-height: 3cqh !important;
+            padding: 1cqh !important;
+            }
+        }
+        
+    }
+
+
+  }
+
+  @media screen and (max-width: 600px) {
     .main{
-        margin-top: 10cqh;
+        margin-top: 4cqh;
     }
     .headerDay,
     .headerNight{
@@ -57,10 +167,11 @@
         .themeBtns{
             position: relative;
             top: 2cqh;
+
         }
         .burgerBtn,
         .themeBtn{
-        width: 7cqw;
+        width: 7cqw !important;
     }
     }
     
@@ -121,7 +232,7 @@
     }
     
     .tittleBlock{
-        padding-bottom: 6cqh;
+        padding-bottom: 15cqh;
         .homeTittle{
             padding: 0;
             min-width: 50cqw;
@@ -151,10 +262,11 @@
         }
     }
     .sectionBtn{
-        width: fit-content;
         position: absolute;
         margin-top: 5cqh;
-        width: 85cqw;
+        display: flex;
+        justify-content: space-around;
+        width: -webkit-fill-available;
         button{
             display: inline-block;
             padding: 3cqw;

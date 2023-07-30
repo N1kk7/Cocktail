@@ -38,6 +38,7 @@ module.exports = {
             '55cqw' : '55cqw',
             '65cqw' : '65cqw',
             '70cqw' : '70cqw',
+            '85cqw' : '85cqw',
             '100cqw' : '100cqw',
             'webkit' : '-webkit-fill-available',
 
@@ -107,8 +108,12 @@ module.exports = {
         padding: {
           'py-1cqh' : '1cqh 0',
           'px-1cqw' : '0 1cqw',
+          '1cqw' : '1cqw',
+          '2cqw' : '2cqw',
+          '3cqw' : '3cqw',
+          '4cqw' : '4cqw',
+          '5cqw' : '5cqw'
 
-          '2cqw' : '2cqw'
         },
         margin: {
           'my-1cqh' : '1cqh 0',
@@ -123,9 +128,26 @@ module.exports = {
         },
         display: {
           'd-unset' : 'unset',
+          'dInherit' : 'inherit',
+
         },
+        // borderBottomLeftRadius: {
+        //   'b-b-l-r' : '0'
+        // },
+        // borderTopLeftRadius: {
+        //   'b-t-l-r' : '0'
+
+        // },
+        // borderTopRightRadius: {
+        //   'b-t-r-r' : '0'
+
+        // },
+        // borderBottomRightRadius: {
+        //   'b-b-r-r' : '0'
+
+        // },
 
       },
     },
     plugins: [],
-  }
+  } 

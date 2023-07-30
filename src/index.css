@@ -152,3 +152,19 @@
 .homeSwiper .swiper-slide{
   background: none;
 }
+.aboutCocktail .swiper-slide{
+
+  background: transparent !important;
+}
+.aboutCocktail .swiper-slide img{
+
+max-width: 50cqw;
+margin: 0 auto;
+}
+.availableDrinks .parallaxTittle{
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 13cqh;
+  padding: 2cqh 4cqw;
+  border: 1px solid white;
+  border-radius: 3cqw;
+}

@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "https://n1kk7.github.io/cocktail/build/static/css/main.eb3cd6e0.css",
-    "main.js": "https://n1kk7.github.io/cocktail/build/static/js/main.319a29db.js",
+    "main.css": "https://n1kk7.github.io/cocktail/build/static/css/main.10d9c428.css",
+    "main.js": "https://n1kk7.github.io/cocktail/build/static/js/main.18a1b133.js",
     "static/media/bg1.png": "https://n1kk7.github.io/cocktail/build/static/media/bg1.d767ba90fccde550de65.png",
     "static/media/non-alco.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/non-alco.3a65813455305f756622.jpeg",
     "static/media/8.png": "https://n1kk7.github.io/cocktail/build/static/media/8.ee9a2c019cd9361b4e8a.png",
     "static/media/11.png": "https://n1kk7.github.io/cocktail/build/static/media/11.466f58d140106c30e795.png",
     "static/media/10.png": "https://n1kk7.github.io/cocktail/build/static/media/10.1dc2b369c17eb85e79d1.png",
     "static/media/2.png": "https://n1kk7.github.io/cocktail/build/static/media/2.444e3db0b0b45ea9d413.png",
+    "static/media/homeSwiper3.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/homeSwiper3.3d75aaae1c9fd8066eab.jpeg",
     "static/media/12.png": "https://n1kk7.github.io/cocktail/build/static/media/12.cf05389e567f3fbdcdb2.png",
     "static/media/3.png": "https://n1kk7.github.io/cocktail/build/static/media/3.927d180574556a711bd9.png",
     "static/media/1.png": "https://n1kk7.github.io/cocktail/build/static/media/1.c4422bf720311c47316b.png",
@@ -16,14 +17,22 @@
     "static/media/4.png": "https://n1kk7.github.io/cocktail/build/static/media/4.8f9ade4c25b35564509a.png",
     "static/media/alcohol.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/alcohol.d3e138038b2d251dc67d.jpeg",
     "static/media/1.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/1.0476a069169f33774c10.jpeg",
+    "static/media/homeSwiper4.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/homeSwiper4.264d1df0461e0fc32ccb.jpeg",
+    "static/media/homeSwiper2.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/homeSwiper2.0216313146fa79d7c6e0.jpeg",
+    "static/media/homeSwiper5.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/homeSwiper5.8b4a766143efd51adb0b.jpeg",
+    "static/media/home1.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/home1.4bb68b6e47f5faf0110d.jpeg",
+    "static/media/homeSwiper1.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/homeSwiper1.1a7ec03330cd8fe82429.jpeg",
+    "static/media/home4.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/home4.f40406fd9af82af9d9ab.jpeg",
     "static/media/activeHeart.png": "https://n1kk7.github.io/cocktail/build/static/media/activeHeart.068b4ca28003742a20e5.png",
+    "static/media/home3.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/home3.dce01e7bdbd5700ef20b.jpeg",
+    "static/media/home2.jpeg": "https://n1kk7.github.io/cocktail/build/static/media/home2.fb1d541342e12d5f0a5e.jpeg",
     "static/media/heart.png": "https://n1kk7.github.io/cocktail/build/static/media/heart.e73c82c336e44596e754.png",
     "index.html": "https://n1kk7.github.io/cocktail/build/index.html",
-    "main.eb3cd6e0.css.map": "https://n1kk7.github.io/cocktail/build/static/css/main.eb3cd6e0.css.map",
-    "main.319a29db.js.map": "https://n1kk7.github.io/cocktail/build/static/js/main.319a29db.js.map"
+    "main.10d9c428.css.map": "https://n1kk7.github.io/cocktail/build/static/css/main.10d9c428.css.map",
+    "main.18a1b133.js.map": "https://n1kk7.github.io/cocktail/build/static/js/main.18a1b133.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb3cd6e0.css",
-    "static/js/main.319a29db.js"
+    "static/css/main.10d9c428.css",
+    "static/js/main.18a1b133.js"
   ]
 }

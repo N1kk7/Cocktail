@@ -14,6 +14,17 @@ import cartoon10 from '../img/cartoonImg/10.png'
 import cartoon11 from '../img/cartoonImg/11.png'
 import cartoon12 from '../img/cartoonImg/12.png'
 import nightImg1 from '../img/nightImg/1.jpeg'
+import home1 from '../img/home1.jpeg'
+import home2 from '../img/home2.jpeg'
+import home3 from '../img/home3.jpeg'
+import home4 from '../img/home4.jpeg'
+import hSwiper1 from '../img/homeSwiper1.jpeg'
+import hSwiper2 from '../img/homeSwiper2.jpeg'
+import hSwiper3 from '../img/homeSwiper3.jpeg'
+import hSwiper4 from '../img/homeSwiper4.jpeg'
+import hSwiper5 from '../img/homeSwiper5.jpeg'
+
+
 
 
 // import "./styles.css";
@@ -23,7 +34,8 @@ import { EffectCube, Pagination } from "swiper";
 import Footer from "../components/FooterBlock";
 import { useSelector } from "react-redux";
 import Modal from "../components/Modal";
-import { useEffect, useState } from "react";
+// import "./styles.css";
+import { useEffect, useState} from "react";
 
 
 export default function Home() {
@@ -55,7 +67,7 @@ export default function Home() {
         {modal && <Modal key={Date.now()}/>}
 
       <section
-          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
+          className="tittleBlock flex flex-wrap justify-evenly items-center font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
 
           <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
@@ -149,7 +161,7 @@ export default function Home() {
       </section>
   
         <section
-          className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
+          className="availableDrinks flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
           // style={{backgroundImage: `url(./nightImg/1.jpeg)`}}
           style={{backgroundImage: `url(${nightImg1})`}}
 
@@ -158,53 +170,133 @@ export default function Home() {
               Here is available more than 700 drinks!
           </h1>
         </section>
-      <section className="textBlock py-6 px-16 space-y-8">
-          <h1 className="text-4xl text-center my-10 font-tangerine text-indigo-900">About this App</h1>
+        <section className="aboutCocktail textBlock py-6 px-16 space-y-8">
+          <div className="container w-85cqw">
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleRight flex justify-end">
+                <h1 className="text-4xl text-right my-10 font-tangerine text-blue-700 border-b-2 border-b-indigo-700 w-20cqw p-1cqw">
+                  About this App
+                </h1>
+              </div>
+              <div className="itemWrapper flex justify-evenly">
+                  <div className="leftImg">
+                    <img src={home1} alt="home1" />
+                  </div>
+                  <div className="textRight flex items-center">
+                    <p className="font-raleway leading-10 text-blue-700 w-40cqw p-5cqw border-2 border-indigo-500 rounded-3xl rounded-l-none border-l-0">    
+                      Our Cocktail Recipes app brings together the best and delicious cocktails from all over the world.
+                      The Cocktail Recipes app offers you many easy and quick recipes. These include alcoholic beverages and non-alcoholic beverages.
+                      There are many amazing cocktails that are the best choice for a party.
+                      Simple instructions for a cocktail recipe with a picture
+                      Each alcoholic drink mixing recipe has simple step by step instructions with a photo.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleLeft flex justify-start">
+                <h1 className="text-4xl text-left my-10 font-tangerine text-blue-700 border-b-2 border-b-indigo-700 w-25cqw p-1cqw">
+                  Collect your favorite cocktail recipes
+                </h1>
+              </div>
+              <div className="itemWrapper flex justify-evenly">
+                  
+                  <div className="textLeft flex items-center">
+                    <p className="font-raleway leading-10 text-blue-700 w-40cqw p-5cqw border-2 border-indigo-500 rounded-3xl rounded-r-none border-r-0">    
+                      Add your favorite drink recipe to the favorites section of the app. 
+                      You can use saved cocktail recipes offline. You can also create collections of alcoholic mixed drink recipes 
+                      based on vodka rum and whiskey cocktail recipe, mixed cocktails, blood maries, bourbon drinks, champagne drinks, 
+                      cosmopolitans, daiquiris, hurricanes, gin drinks, margarita, martini, mojito recipe, rum drinks. , 
+                      tequila, vodka, whiskey, flavors and simple syrups, etc.
+                    </p>
+                  </div>
+                  <div className="rightImg">
+                    <img src={home2} alt="" />
+                  </div>
+                </div>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleRight flex justify-end">
+                <h1 className="text-4xl text-right my-10 font-tangerine text-blue-700 border-b-2 border-b-indigo-700 w-20cqw p-1cqw">
+                  Search cocktail recipes
+                </h1>
+              </div>
+                <div className="itemWrapper flex justify-evenly">
+                  <div className="leftImg">
+                      <img src={home3} alt="home3" />
+                  </div>
+                  <div className="textRight flex items-center">
+                    <p className="font-raleway leading-10 text-blue-700 w-40cqw p-5cqw border-2 border-indigo-500 rounded-3xl rounded-l-none border-l-0"> 
+                      Let the cocktails flow with our lovely drink finder. Find recipes with a simple search by recipe name or ingredients used. 
+                      You can search for a drink recipe with the ingredients you have based on special occasions such as: 
+                      Thanksgiving, Christmas, Halloween, etc.   
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleLeft flex justify-start">
+                <h1 className="text-4xl text-left my-10 font-tangerine text-blue-700 border-b-2 border-b-indigo-700 w-25cqw p-1cqw">
+                  We offer many cocktail recipes
+                </h1>
+              </div>
+              <div className="itemWrapper flex justify-evenly">
+                  <div className="textLeft flex items-center">
+                    <p className="font-raleway leading-10 text-blue-700 w-40cqw p-5cqw border-2 border-indigo-500 rounded-3xl rounded-r-none border-r-0">        
+                      Prepare delicious recipes for alcoholic mixed drinks at home using sugar, honey, milk, herbs, soda, fruit juices, cream, sauce, lemon juice and liquor.
+                      Recipes for classic drinks such as Pineapple Milk, Freedom Punch, Apple Chips, Prairie Buzz and Ginger Baker are available in the app.
+                    </p>
+                  </div><div className="rightImg">
+                    <img src={home4} alt="" />
+                  </div>
+                </div>
 
-          <p className="font-raleway leading-loose text-blue-800">    
-            Our Cocktail Recipes app brings together the best and delicious cocktails from all over the world.
-            The Cocktail Recipes app offers you many easy and quick recipes. These include alcoholic beverages and non-alcoholic beverages.
-            There are many amazing cocktails that are the best choice for a party.
-            Simple instructions for a cocktail recipe with a picture
-            Each alcoholic drink mixing recipe has simple step by step instructions with a photo.
-          </p>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittle flex justify-center">
+                <h1 className="text-4xl text-center my-10 font-tangerine text-blue-700 border-b-2 border-b-indigo-700 w-85cqw p-1cqw">  
+                  Start making drinks with our free cocktail recipe app today, it's the perfect drink maker.      
+                </h1>
+                
+              </div>
+              <div className="blockWrapper">
+                  <div className="swiperImg">
+                  <Swiper className="mySwiper "
+                          autoplay={{ delay: 4000 }}
+                  >
+                    <SwiperSlide>
+                      <img src={hSwiper1} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper2} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper3} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper4} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper5} alt="" />
+                    </SwiperSlide>
+                 
+                  </Swiper>
 
-          <h2 className="font-frederica text-2xl text-indigo-900">Collect your favorite cocktail recipes</h2>
+                  </div>
+                  
+                </div>
 
-          <p className="font-raleway leading-loose text-blue-800">    
-            Add your favorite drink recipe to the favorites section of the app. 
-            You can use saved cocktail recipes offline. You can also create collections of alcoholic mixed drink recipes 
-            based on vodka rum and whiskey cocktail recipe, mixed cocktails, blood maries, bourbon drinks, champagne drinks, 
-            cosmopolitans, daiquiris, hurricanes, gin drinks, margarita, martini, mojito recipe, rum drinks. , 
-            tequila, vodka, whiskey, flavors and simple syrups, etc.
-          </p>
-
-          <h2 className="font-frederica text-2xl text-indigo-900">Search cocktail recipes</h2>
-
-          <p className="font-raleway leading-loose text-blue-800"> 
-            Let the cocktails flow with our lovely drink finder. Find recipes with a simple search by recipe name or ingredients used. 
-            You can search for a drink recipe with the ingredients you have based on special occasions such as: 
-            Thanksgiving, Christmas, Halloween, etc.   
-          </p>
-
-          <h2 className="font-frederica text-2xl text-indigo-900">We offer many cocktail recipes</h2>
-
-          <p className="font-raleway leading-loose text-blue-800">        
-            Prepare delicious recipes for alcoholic mixed drinks at home using sugar, honey, milk, herbs, soda, fruit juices, cream, sauce, lemon juice and liquor.
-            Recipes for classic drinks such as Pineapple Milk, Freedom Punch, Apple Chips, Prairie Buzz and Ginger Baker are available in the app.
-          </p>
-
-          <p className="font-raleway leading-loose text-blue-800">  
-            Start making drinks with our free cocktail recipe app today, it's the perfect drink maker.      
-          </p>
-      </section>
+            </div>
+          </div>
+        </section>
     <Footer/>
       </main>}
       {!theme && <main className="main flex flex-col items-center justify-center mt-32 z-30" style={{position: `${style}` as "unset"}}>
         {modal && <Modal key={Date.now()}/>}
 
       <section
-          className="tittleBlock flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
+          className="tittleBlock flex flex-wrap justify-evenly items-center font-sans px-4 mx-auto w-full lg:max-w-customFitCont sm:max-w-screen-sm md:max-w-screen-md pb-20">
+
 
           <div className="homeTittle px-3 w-full lg:w-2/5">
               <div
@@ -298,53 +390,132 @@ export default function Home() {
       </section>
   
         <section
-          className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
+          className="availableDrinks flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
           style={{backgroundImage: `url(${nightImg1})`}}
           >
-          <h1 className="parallaxTittle text-bisque bg-customTextBg rounded-xl p-5 text-5xl font-semibold mt-20 mb-10">
+          <h1 className=" parallaxTittle text-bisque bg-customTextBg rounded-xl p-5 text-5xl font-semibold mt-20 mb-10">
               Here is available more than 700 drinks!
           </h1>
         </section>
-      <section className="textBlock py-6 px-16 space-y-8">
-          <h1 className="text-4xl text-center my-10 font-tangerine text-bisque">About this App</h1>
+        <section className="aboutCocktail textBlock py-6 px-16 space-y-8">
+          <div className="container w-85cqw">
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleRight flex justify-end">
+                <h1 className="text-4xl text-right my-10 font-tangerine text-bisque border-b-2 border-b-stone-500 w-20cqw p-1cqw">
+                  About this App
+                </h1>
+              </div>
+              <div className="itemWrapper flex justify-evenly">
+                  <div className="leftImg">
+                    <img src={home1} alt="home1" />
+                  </div>
+                  <div className="textRight flex items-center">
+                    <p className="font-raleway leading-10 text-bisque w-40cqw p-5cqw border-2 border-stone-500 rounded-3xl rounded-l-none border-l-0">    
+                      Our Cocktail Recipes app brings together the best and delicious cocktails from all over the world.
+                      The Cocktail Recipes app offers you many easy and quick recipes. These include alcoholic beverages and non-alcoholic beverages.
+                      There are many amazing cocktails that are the best choice for a party.
+                      Simple instructions for a cocktail recipe with a picture
+                      Each alcoholic drink mixing recipe has simple step by step instructions with a photo.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleLeft flex justify-start">
+                <h1 className="text-4xl text-left my-10 font-tangerine text-bisque border-b-2 border-b-stone-500 w-25cqw p-1cqw">
+                  Collect your favorite cocktail recipes
+                </h1>
+              </div>
+              <div className="itemWrapper flex justify-evenly">
+                  
+                  <div className="textLeft flex items-center">
+                    <p className="font-raleway leading-10 text-bisque w-40cqw p-5cqw border-2 border-stone-500 rounded-3xl rounded-r-none border-r-0">    
+                      Add your favorite drink recipe to the favorites section of the app. 
+                      You can use saved cocktail recipes offline. You can also create collections of alcoholic mixed drink recipes 
+                      based on vodka rum and whiskey cocktail recipe, mixed cocktails, blood maries, bourbon drinks, champagne drinks, 
+                      cosmopolitans, daiquiris, hurricanes, gin drinks, margarita, martini, mojito recipe, rum drinks. , 
+                      tequila, vodka, whiskey, flavors and simple syrups, etc.
+                    </p>
+                  </div>
+                  <div className="rightImg">
+                    <img src={home2} alt="" />
+                  </div>
+                </div>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleRight flex justify-end">
+                <h1 className="text-4xl text-right my-10 font-tangerine text-bisque border-b-2 border-b-stone-500 w-20cqw p-1cqw">
+                  Search cocktail recipes
+                </h1>
+              </div>
+                <div className="itemWrapper flex justify-evenly">
+                  <div className="leftImg">
+                      <img src={home3} alt="home3" />
+                  </div>
+                  <div className="textRight flex items-center">
+                    <p className="font-raleway leading-10 text-bisque w-40cqw p-5cqw border-2 border-stone-500 rounded-3xl rounded-l-none border-l-0"> 
+                      Let the cocktails flow with our lovely drink finder. Find recipes with a simple search by recipe name or ingredients used. 
+                      You can search for a drink recipe with the ingredients you have based on special occasions such as: 
+                      Thanksgiving, Christmas, Halloween, etc.   
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittleLeft flex justify-start">
+                <h1 className="text-4xl text-left my-10 font-tangerine text-bisque border-b-2 border-b-stone-500 w-25cqw p-1cqw">
+                  We offer many cocktail recipes
+                </h1>
+              </div>
+              <div className="itemWrapper flex justify-evenly">
+                  <div className="textLeft flex items-center">
+                    <p className="font-raleway leading-10 text-bisque w-40cqw p-5cqw border-2 border-stone-500 rounded-3xl rounded-r-none border-r-0">        
+                      Prepare delicious recipes for alcoholic mixed drinks at home using sugar, honey, milk, herbs, soda, fruit juices, cream, sauce, lemon juice and liquor.
+                      Recipes for classic drinks such as Pineapple Milk, Freedom Punch, Apple Chips, Prairie Buzz and Ginger Baker are available in the app.
+                    </p>
+                  </div><div className="rightImg">
+                    <img src={home4} alt="" />
+                  </div>
+                </div>
 
-          <p className="font-raleway leading-loose text-zinc-400">    
-            Our Cocktail Recipes app brings together the best and delicious cocktails from all over the world.
-            The Cocktail Recipes app offers you many easy and quick recipes. These include alcoholic beverages and non-alcoholic beverages.
-            There are many amazing cocktails that are the best choice for a party.
-            Simple instructions for a cocktail recipe with a picture
-            Each alcoholic drink mixing recipe has simple step by step instructions with a photo.
-          </p>
+            </div>
+            <div className="itemBlock pb-2cqw">
+              <div className="itemTittle flex justify-center">
+                <h1 className="text-4xl text-center my-10 font-tangerine text-bisque border-b-2 border-b-stone-500 w-85cqw p-1cqw">  
+                  Start making drinks with our free cocktail recipe app today, it's the perfect drink maker.      
+                </h1>
+                
+              </div>
+              <div className="blockWrapper">
+                  <div className="swiperImg">
+                  <Swiper className="mySwiper "
+                          autoplay={{ delay: 4000 }}
+                  >
+                    <SwiperSlide>
+                      <img src={hSwiper1} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper2} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper3} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper4} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={hSwiper5} alt="" />
+                    </SwiperSlide>
+                 
+                  </Swiper>
 
-          <h2 className="font-frederica text-2xl text-bisque">Collect your favorite cocktail recipes</h2>
+                  </div>
+                  
+                </div>
 
-          <p className="font-raleway leading-loose text-zinc-400">    
-            Add your favorite drink recipe to the favorites section of the app. 
-            You can use saved cocktail recipes offline. You can also create collections of alcoholic mixed drink recipes 
-            based on vodka rum and whiskey cocktail recipe, mixed cocktails, blood maries, bourbon drinks, champagne drinks, 
-            cosmopolitans, daiquiris, hurricanes, gin drinks, margarita, martini, mojito recipe, rum drinks. , 
-            tequila, vodka, whiskey, flavors and simple syrups, etc.
-          </p>
-
-          <h2 className="font-frederica text-2xl text-bisque">Search cocktail recipes</h2>
-
-          <p className="font-raleway leading-loose text-zinc-400"> 
-            Let the cocktails flow with our lovely drink finder. Find recipes with a simple search by recipe name or ingredients used. 
-            You can search for a drink recipe with the ingredients you have based on special occasions such as: 
-            Thanksgiving, Christmas, Halloween, etc.   
-          </p>
-
-          <h2 className="font-frederica text-2xl text-bisque">We offer many cocktail recipes</h2>
-
-          <p className="font-raleway leading-loose text-zinc-400">        
-            Prepare delicious recipes for alcoholic mixed drinks at home using sugar, honey, milk, herbs, soda, fruit juices, cream, sauce, lemon juice and liquor.
-            Recipes for classic drinks such as Pineapple Milk, Freedom Punch, Apple Chips, Prairie Buzz and Ginger Baker are available in the app.
-          </p>
-
-          <p className="font-raleway leading-loose text-zinc-400">  
-            Start making drinks with our free cocktail recipe app today, it's the perfect drink maker.      
-          </p>
-      </section>
+            </div>
+          </div>
+        </section>
     <Footer/>
       </main>}
     </>
