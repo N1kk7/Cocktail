@@ -170,12 +170,12 @@ useEffect(() => {
 
   return (
     <>
-        {theme && <div className="bg-gradient-to-b from-pink-100 to-purple-200 h-auto min-h-100cqh">
+        {theme && <div className="drink bg-gradient-to-b from-pink-100 to-purple-200 h-auto min-h-100cqh">
         <div className="container m-auto px-6 py-20 md:px-12 lg:px-20">
             <div className="m-auto text-center lg:w-8/12 xl:w-7/12">
                 <h2 className="text-2xl text-pink-900 font-bold md:text-4xl font-frederica pt-8">Information of drink prepare</h2>
             </div>
-            <div className="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
+            <div className="drinkWrapper mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
 
                 <div className="relative group md:w-6/12 lg:w-7/12">
                     <div aria-hidden="true" className="absolute top-0 w-full h-full rounded-2xl bg-white shadow-lg transition duration-500 group-hover:scale-105"></div>
@@ -187,7 +187,7 @@ useEffect(() => {
                             </div>)}
                         </div>
                     </div> 
-                <div className="relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12">
+                <div className="drinkCard relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-5/12">
                     <div aria-hidden="true" className="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"></div>
                     <div className="relative p-6 space-y-6 lg:p-8">
 

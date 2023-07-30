@@ -162,6 +162,22 @@
         }
 
     }
+    .drink{
+        .container{
+            padding-top: 0;
+
+        .drinkWrapper{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .drinkCard{
+            max-width: -webkit-fill-available;
+        }
+
+        }
+        
+    }
+    
     
   }
   @media screen and (max-width: 600px) {
@@ -190,6 +206,71 @@
         }
         
     }
+
+    // cocktail
+    .alcohol,
+    .non-alcohol{
+        justify-content: end;
+        position: unset;
+        .info-block{
+            width: 80cqw;
+            .description{
+                // background-image: url('../img/alcohol.jpeg');
+                padding: 2cqh 0;
+                // width: 70cqw;
+                width: fit-content;
+                p{
+                    border-radius: 5cqw;
+                    margin: 5cqw;
+                    padding: 2cqw;
+                }
+
+            }
+        }
+    }
+    .alcohol{
+        .description{
+            background-image: url('../img/alcohol.jpeg');
+            background-size: cover;
+            color: bisque;
+            // margin: 0;
+            p{
+                background-color: rgba(0,0,0, 0.6);
+            }
+
+        }
+    }
+    .non-alcohol{
+        .description{
+            background-image: url('../img/non-alco.jpeg');
+            background-size: cover;
+            p{
+                background-color: rgba(255,255,255, 0.7);
+            }
+
+        }
+    }
+    .main-img{
+        display: none;
+    }
+    .letterDrinkImg{
+        width: 50cqw;
+    }
+    .favoriteBtn{
+        button{
+            img{
+                width: 5cqw;
+            }
+        }
+    }
+    
+
+
+
+
+
+
+
     //ingredient
 
     .ingredientSection{

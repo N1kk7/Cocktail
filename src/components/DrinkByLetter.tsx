@@ -59,8 +59,8 @@ export default function DrinkByLetter({card}: drinkProps) {
 
   return (
         <div className="py-6 m-auto">
-            <div className="letterDrink flex w-40cqw bg-white shadow-lg rounded-lg overflow-hidden">
-                <div className="w-1/3 bg-cover" style={{backgroundImage: `url(${card.strDrinkThumb})`}}>
+            <div className="letterDrink flex w-40cqw shadow-lg rounded-lg overflow-hidden">
+                <div className="letterDrinkImg w-1/3 bg-cover" style={{backgroundImage: `url(${card.strDrinkThumb})`}}>
                 </div> 
                 <div className="w-2/3 p-4">
                 <h1 className="text-gray-900 font-bold text-2xl border-b-2 border-black">{card.strDrink}</h1>
