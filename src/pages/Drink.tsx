@@ -181,7 +181,7 @@ useEffect(() => {
                     <div aria-hidden="true" className="absolute top-0 w-full h-full rounded-2xl bg-white shadow-lg transition duration-500 group-hover:scale-105"></div>
                         <div className="relative  md:rounded-r-2xl">
                         </div>
-                        <div className="ingredientWWrap text-start py-24 px-10">
+                        <div className="ingredientWrap text-start py-24 px-10">
                             { ingrImg.map((elem: any) => <div className='card inline-block px-5 py-1 align-top font-tangerine text-4xl' key={elem}><img className='ingredientImg relative z-20 flex hover:transition hover:duration-500 hover:scale-110' src={`https://www.thecocktaildb.com/images/ingredients/${elem}-Small.png`} alt=''></img>
                             <span className='relative block text-center max-w-min mx-auto pt-5'>{elem}</span>
                             </div>)}

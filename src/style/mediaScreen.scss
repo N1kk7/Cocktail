@@ -127,6 +127,13 @@
     .cocktailPage{
         .container{
             width: 90cqw;
+            .alcohol,
+            .non-alcohol{
+                .info-block{
+                    right: unset;
+                    margin: 0 auto;
+                }
+            }
         }
     }
     .listBtn{
@@ -172,9 +179,20 @@
         }
         .drinkCard{
             max-width: -webkit-fill-available;
+            width: 90cqw;
         }
 
         }
+        .ingredientWrap{
+            text-align: center;
+            .card{
+                padding: 0;
+                padding-bottom: 2vh;
+    
+            }
+
+        }
+        
         
     }
     
@@ -461,6 +479,8 @@
    @media screen and (max-width: 425px) {
     .ingredient{
         padding: 1cqh 0.5cqh;
+        width: 90cqw;
+        margin: 0 auto;
         .ingredientSection{
             // grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 1cqw;

@@ -27,7 +27,6 @@ export default function Header() {
     const theme = useSelector((state:any) => state.theme.theme);
     const burgerMenuState = useSelector((state:any) => state.theme.burgerMenu)
     const dispatch = useDispatch();
-console.log(burgerMenuState)
 
     const activeBurgerMenu = () => {
         
@@ -183,12 +182,12 @@ console.log(burgerMenuState)
         </div>
             
         <Routes>
-            <Route path="cocktail/build//" element={<Home />}/>
-            <Route path="cocktail/build//Cocktail" element={<Cocktail />}/>
-            <Route path="cocktail/build//Ingredient" element={<Ingredient />}/>
-            <Route path="cocktail/build//Drink/:id" element={<Drink />}/>
-            <Route path="cocktail/build//Favorite" element={<Favorite />}/>
-            <Route path="cocktail/build//Latest" element={<Latest />}/>
+            <Route path="cocktail/build/" element={<Home />}/>
+            <Route path="cocktail/build/Cocktail" element={<Cocktail />}/>
+            <Route path="cocktail/build/Ingredient" element={<Ingredient />}/>
+            <Route path="cocktail/build/Drink/:id" element={<Drink />}/>
+            <Route path="cocktail/build/Favorite" element={<Favorite />}/>
+            <Route path="cocktail/build/Latest" element={<Latest />}/>
 
             
         </Routes>
